@@ -1,0 +1,28 @@
+{% extends "dojopage.master" %}
+{% block title %}{{dojo.location}} CoderDojo{% endblock title %}
+{% block mainpanel %}
+	{% block blurb %}{% endblock blurb %}
+	<br/>
+	<p><b>Location:</b> {{dojo.company}}, {{dojo.location}}</p>
+	<p><b>Session Schedule:</b> {{dojo.days}}, {{dojo.time}}</p>
+	<p><b>Capacity:</b> {{dojo.cap}}</p>
+	<p><b>Founded:</b> {{dojo.start}}</p>
+	<div class="space"></div>
+	<img class="cam" src="{% block picture %}{% endblock picture %}"/>
+	<h4>Additional Info</h4>
+	<p>{% block moreinfo %}{% endblock moreinfo %}</p>
+{% endblock mainpanel %}
+{% block sidebar %}
+	<div class="printhidden">
+		<p>Next Session</p>
+		<p style="margin-bottom: 20px;"><a target="_blank" class="btn btn-success" href="{{dojo.zenid}}">Attend</a></p>
+		
+		<!--<p>Event Announcements</p>
+		<p style="margin-bottom: 20px;"><a target="_blank" class="btn btn-success" href="http://groups.google.com/forum/#!forum/{{dojo.googlegroup}}">Join</a></p>-->
+		
+		<p>Past Sessions</p>
+		<p style="margin-bottom: 20px;"><a target="_blank" class="btn btn-success" href="{{dojo.git}}">View</a></p>
+		
+		<p>If you want event announcements, join the <a target="_blank" href="http://groups.google.com/forum/#!forum/{{dojo.googlegroup}}">Google Group</a></p>
+	</div>
+{% endblock sidebar %}

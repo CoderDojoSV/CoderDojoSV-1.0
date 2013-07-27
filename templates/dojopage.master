@@ -1,0 +1,16 @@
+{% extends "site.master" %}
+{% block body %}
+	<div class="containery">
+		<div class="row-fluid">
+			<div class="span9 side" id="bigspan">
+				<h4>{% block title %}{% endblock title %}</h4>
+				{% block mainpanel %}{% endblock mainpanel %}
+			</div>
+			<div class="span3 side" id="dojolist">
+				<h4 style="color:white;cursor:default;">.</h4>
+				{% block sidebar %}
+				{% endblock sidebar %}
+			</div>
+		</div>
+	</div>
+{% endblock body %}

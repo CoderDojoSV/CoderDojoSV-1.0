@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CoderDojo Silicon Valley</title>
+		<link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}" type="text/css"/>
+		<link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap.min.css')}}" type="text/css"/>
+		<script src="{{url_for('static', filename='bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>
+		<script src="{{url_for('static', filename='jui/jquery-1.9.1.js')}}" type="text/javascript"></script>
+		<link media="screen" rel="stylesheet" href="{{url_for('static', filename='jui/themes/eggplant/jquery-ui.css')}}" type="text/css"/>
+		<script src="{{url_for('static', filename='jui/ui/jquery-ui.js')}}" type="text/javascript"></script>
+		<script>
+			$(function() {
+				$(".accordion").accordion({
+					collapsible: true
+				});
+				$("#tabs").tabs({
+					fx: { opacity: 'toggle' }
+				}).addClass("ui-helper-clearfix");
+				$("#coderninja").mouseover(function() {
+					$("#powered").fadeIn();
+					$("#coderninja").animate({
+						left: "-80",
+						top: "-=50"
+					}, "slow");
+				});
+				window.openDialog = function(id) {
+					$(id).dialog({
+						modal: true,
+						width: 720,
+						height: 490,
+						hide: {
+							effect: "fade",
+							duration: "medium"
+						},
+						show: {
+							effect: "puff",
+							duration: "medium"
+						},
+						minimize: "#topbar"
+					});
+				};
+				$("#coderninja").mouseout(function() {
+					$("#coderninja").animate({
+						left: "-140",
+						top: "200px"
+					}, "slow");
+					$("#powered").fadeOut();
+				});
+				$('.dojo .buttonLink').each(function() {
+					$(this).css('margin-top', $(this).parent().height()-$(this).height())
+				});
+			});
+		</script>
+		<style>
+			.ui-tabs-vertical { width: 99%; }
+			.ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
+			.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+			.ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+			.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+			.ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
+		</style>
+		{% block extras %}
+		{% endblock extras %}
+	</head>
+	
+	<body id="body">
+		<div class="dialog" id="comingSoon" title="Info">
+			Coming soon...
+		</div>
+		<div id="logocon">
+			<div class="containery">
+				<div class="row-fluid" style="background-color: transparent;">
+					<div class="span12">
+						<div id="topmini" class="printhidden">
+							<a href="/about">ABOUT</a>
+							<a href="mailto:siliconvalley@coderdojo.com">CONTACT</a>
+							<a href="/faqs">FAQS</a>
+							<a href="#" onclick="window.openDialog('#comingSoon')">STORE</a>
+						</div>
+						<p><a href="/"><img id="svlogo" src="{{url_for('static', filename='svlogo.png')}}" alt="Silicon Valley CoderDojo"/></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="topbar" class="printhidden">
+			<div class="containery">
+				<div class="row-fluid" style="background-color: transparent;">
+					<div class="span12">
+						{% for link in topbar %}
+							<a class="buttonLink" href="{{link.page}}">{{link.title}}</a>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+		{% block body %}
+		{% endblock body %}
+	</body>
+</html>

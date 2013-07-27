@@ -1,0 +1,211 @@
+<head>
+	<link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}" type="text/css"/>
+	<link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap.min.css')}}" type="text/css"/>
+	<script src="{{url_for('static', filename='bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>
+	<script src="{{url_for('static', filename='jui/jquery-1.9.1.js')}}" type="text/javascript"></script>
+	<link media="screen" rel="stylesheet" href="{{url_for('static', filename='jui/themes/redmond/jquery-ui.css')}}" type="text/css"/>
+	<script src="{{url_for('static', filename='jui/ui/jquery-ui.js')}}" type="text/javascript"></script>
+	<style>
+		body {
+			background: url('{{url_for('static', filename='windows/windowsxp.jpg')}}');
+			background-size: 100% 100%;
+			font-family: "MS Reference Sans Serif";
+		}
+		
+		p, h1, h2, h3, h4, td {
+			cursor: default;
+		}
+		
+		.hero-unit {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			z-index: 10;
+		}
+		.menuitem {
+			cursor: pointer;
+			padding: 5px;
+			margin: 5px;
+			background-color: lightgrey;
+			color: black;
+		}
+		.menuitem:hover {
+			background-color: grey;
+			color: white;
+		}
+		
+		.bottombar {
+			position: fixed;
+			bottom: 0;
+			background-color: #0F65C2;
+			height: 50px;
+			color: white;
+		}
+		
+		#start {
+			margin: 10px;
+			padding: 4px;
+			background-color: darkgreen;
+			width: 100px;
+		}
+		#start:hover {
+			background-color: green;
+			cursor: pointer;
+		}
+		
+		#startmenu {
+			display: none;
+			height: 400px;
+			position: fixed;
+			bottom: 50px;
+			width: 300px;
+			background-color: lightgrey;
+		}
+		#top {
+			width: 300px;
+			background-color: grey;
+			margin: 0;
+		}
+		
+		#top h1 {
+			margin: 0;
+			display: inline;
+		}
+		
+		img {
+			width: 69px;
+			height: 69px;
+			margin-right: 5px;
+		}
+		.dialog {
+			display: none;
+		}
+	</style>
+	<script>
+	$(function() {
+		window.playSFX = function(sound) {
+			$("body").append('<embed src="' + sound + '" width="0" height="0" id="sfx"/>')
+			setTimeout(function() {
+				$("#sfx").remove();
+			}, 4000);
+		};
+		
+		window.playSFX("{{url_for('static', filename='windows/start.wav')}}")
+		$(".xdstartup").click(function() {
+			$("#title").animate({
+				top: "-=2000"
+			}, 1000);
+			$(".xdstartup").fadeOut();
+		});
+		var startopen = false;
+		$("#start").click(function() {
+			$("#startmenu").slideToggle();
+			startopen = !startopen;
+			if (startopen) {
+				$("#start").css("background-color", "green");
+			} else {
+				$("#start").removeAttr("style");
+			}
+		});
+		$(".userpic").click(function() {
+			openDialog("#iconchooser");
+			$("#submiticon").click(function() {
+				$(".userpic").attr("src", "/static/windows/" + $("#icon").val());
+				$("#iconchooser").dialog("close");
+				setTimeout(function() {
+					$("#icon").val("");
+				}, 1000);
+			});
+		});
+		window.openModal = function(id) {
+			window.playSFX("{{url_for('static', filename='windows/WARNING.wav')}}")
+			$(id).dialog({
+				modal: true,
+				hide: {
+					effect: "puff",
+					duration: "medium"
+				},
+				show: {
+					effect: "puff",
+					duration: "medium"
+				}
+			});
+		};
+		$("#shutup").click(function() {
+			window.openModal("#shutupwindow");
+		});
+		window.openDialog = function(id) {
+			$(id).dialog({
+				width: 500,
+				height: 500,
+				hide: {
+					effect: "fade",
+					duration: "medium"
+				},
+				show: {
+					effect: "puff",
+					duration: "medium"
+				}
+			});
+		};
+		$("#ie_go").click(function() {
+			$("#ie_web").attr("src", $("#ie_txt").val());
+		});
+	});
+	</script>
+</head>
+<body>
+	<div class="row-fluid xdstartup">
+		<div class="span12 hero-unit" id="title">
+			<h1>Welcome to Windows XD</h1>
+			<h2>The Web OS</h2>
+		</div>
+	</div>
+	<div class="row-fluid bottombar">
+		<div class="span12">
+			<div id="start">
+				<i style="font-size: 2.5em;">start</i>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid" id="startmenu">
+		<div class="span12">
+			<div id="top">
+				<img src="{{url_for('static', filename='windows/windows.png')}}" class="userpic"/>
+				<h1>User</h1>
+			</div>
+			<p onclick="window.openDialog('#filemanager')" class="menuitem">My Documents</p>
+			<p onclick="window.openDialog('#ie')" class="menuitem">Internet Explorer</p>
+			<p id="shutup" class="menuitem">Shut Down</p>
+		</div>
+	</div>
+	<div class="dialog" id="iconchooser" title="Windows">
+		<p>What image file do you want to use?</p>
+		<input type="text" id="icon"/>
+		<br/>
+		<input type="button" id="submiticon" value="Change"/>
+	</div>
+	<div class="dialog" id="shutupwindow" title="XD">
+		<h1>No, Shut Up!</h1>
+	</div>
+	<div class="dialog" id="ie" title="Internet Explorer">
+		<input type="text" placeholder="URL" id="ie_txt"/><input type="button" value="Go" id="ie_go"/>
+		<iframe src="http://www.microsoft.com" width="100%" height="90%" id="ie_web"></iframe>
+	</div>
+	<div class="dialog" id="filemanager" title="My Documents">
+		<table>
+			<tr>
+				<td><img src="{{url_for('static', filename='windows/star.png')}}"/></td>
+				<td>star.png</td>
+			</tr>
+			<tr>
+				<td><img src="{{url_for('static', filename='windows/mac.png')}}"/></td>
+				<td>mac.png</td>
+			</tr>
+			<tr>
+				<td><img src="{{url_for('static', filename='windows/windows.png')}}"/></td>
+				<td>windows.png</td>
+			</tr>
+		</table>
+	</div>
+</body>

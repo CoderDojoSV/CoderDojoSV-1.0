@@ -1,0 +1,16 @@
+{% extends "site.new.master" %}
+{% block body %}
+	<div class="containery">
+		<div class="row-fluid">
+			<div class="span5 side spanleft">
+				{% block left %}{% endblock left %}
+			</div>
+			<div class="span7 side spanright">
+				{% block right %}{% endblock right %}
+			</div>
+		</div>
+	</div>
+	<div class="containery" id="bottombar">
+		{% block extracontent %}{% endblock extracontent %}
+	</div>
+{% endblock body %}

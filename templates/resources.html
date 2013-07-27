@@ -1,0 +1,79 @@
+{% extends "site.new.master" %}
+{% block extras %}
+	<script>
+		$(function() {
+			$(".popup").click(function(e) {
+				e.preventDefault();
+				window.openDialog("#popbox");
+				$("#popbox iframe").attr("src", $(this).attr("href")); //this=.popup, !#popbox iframe
+				$("#poplink").attr("href", "http://www." + $(this).attr("website"));
+				$("#poplink").text($(this).attr("website"));
+			});
+		});
+	</script>
+{% endblock extras %}
+{% block body %}		
+	<div class="dialog" id="popbox" title="Video">
+		<iframe width="99%" height="90%"></iframe>
+		<p>Check out more at <a style="color: skyblue;" target="_blank" href="" id="poplink">code.org</a></p>
+	</div>
+	<div class="containery">
+		<div class="row-fluid">
+			<div class="span12 side">
+				<h3>Resources</h3>
+				<div class="space"></div>
+				<h4>Past Projects</h4>
+				<div class="well">
+					<p>CoderDojo Silicon Valley uses GitHub to share tutorials and code snippets. Browse the GitHub repositories for links to past projects.</p>
+					<div class="row-fluid nobg">
+					{% for dojo in dojos %}
+						<div class="span4">
+							{% if dojo.git == "disabled" %}
+								<button class="disabled btn btn-success btn-block">{{dojo.location}}</button>
+							{% else %}
+								<button class="blink btn btn-success btn-block" href="{{dojo.git}}">{{dojo.location}}</button>
+							{% endif %}
+						</div>
+					{% endfor %}
+					</div>
+				</div>
+				<h4>Videos</h4>
+				<div class="well">
+					<p class="article"><a href='http://www.youtube.com/embed/nKIu9yen5nc?wmode=opaque&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3' class="popup" website="code.org">Code.org Video</a></p>
+					<p>Video that shows computer science "celebrities" discussing the importance of programming skills. Code.org website has links to online learning resources, as well as places to learn in local areas.</p>
+					
+					<p class="article"><a href="http://www.youtube.com/embed/_bjboMjNr9Q" website="coderdojodocumentary.com" class="popup">CoderDojo Documentary</a></p>
+					<p>Video about original CoderDojo beginnings.</p>
+				</div>
+				
+				<h4>Websites</h4>
+				<div class="well">
+					<p class="article"><a href='https://www.edsurge.com/guide/teaching-kids-to-code'>EdSurge: Teaching Kids to Code</a></p>
+					<p>Article about importance of programming skills and more links to online learning resources.</p>
+				
+					<p class="article"><a href="http://kata.coderdojo.com/wiki/Main_Page">Kata</a></p>
+					<p>CoderDojo's open-source wiki knowledge base.</p>
+					
+					<p class="article"><a href="http://blog.ted.com/2013/01/29/10-places-where-anyone-can-learn-to-code/">TED Blog: 10 places Where Anyone Can Learn to Code</a></p>
+					<p>Why programming is an important skill to learn - A TED talk video by Mitch Resnick, the creator of Scratch, and links to various resources.</p>
+			
+					<p class="article"><a href="http://www.computersforcreativity.com">Computers for Creativity</a></p>   
+					<p>This website is by one of our instructors, and contributing writer for EdSurge, Sheena Vaidyanathan. There are lots of great articles, examples and resources about teaching computer science to kids.</p>
+					
+					<p class="article"><a href="http://breakoutmentors.com/blog/">Breakout Mentors Blog Archives</a></p>
+					<p>Articles and tips about learning to program by Breakout Mentors CEO, Brian Skinner. Breakout Mentors "provides the best personalized programming instruction for Bay Area students."</p>
+				</div>
+
+				<h4>Books</h4>
+				<div class="well">
+					<p class="article"><a href="http://www.amazon.com/Hello-World-Computer-Programming-Beginners/dp/1933988495"/>Hello World: Computer Programming for Kids and Other Beginners</a></p>
+					<p>This book is co-written by 2 of our mentors, Warren and Carter Sande. An introduction to Python programming. This book has 5 star reviews on Amazon.</p>
+
+					<p class="article"><a href="http://www.amazon.com/Super-Scratch-Programming-Adventure-Program/dp/1593274092/ref=sr_1_1?s=books&ie=UTF8&qid=1374374688&sr=1-1&keywords=adventures+with+scratch">Super Scratch Programming Adventure!</a></p>
+					<p>This book is a good introduction to Scratch. Although written with respect to Scratch version 1.4, the projects are applicable to Scratch 2.0.</p>
+				</div>
+			</div>
+				<!--<p>See more reasons, and find more resources: <i>Watch <a href='http://www.youtube.com/embed/nKIu9yen5nc?wmode=opaque&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3' class="popup" website="http://www.code.org">Code.org Video</a></i></p>-->
+		</div>
+	</div>
+{% endblock body %}

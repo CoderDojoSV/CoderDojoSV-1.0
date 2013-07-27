@@ -1,0 +1,146 @@
+{% extends "2by2.new.master" %}
+{% block extras %}
+	<script>
+		$(function() {
+			var hashlist = [];
+			jQuery.get("{{url_for('get_hashlist')}}", function(data) {
+				hashlist = $.parseJSON(data);
+			});
+			var i = 0;
+			setTimeout(function() {
+				$("#" + hashlist[i]).fadeOut(450);
+				i += 1;
+				if (i > hashlist.length-1) {
+					i = 0;
+				}
+				setTimeout(function() {
+					$("#" + hashlist[i]).fadeIn(450);
+				}, 500);
+				setInterval(function() {
+					$("#" + hashlist[i]).fadeOut(450);
+					i += 1;
+					if (i > hashlist.length-1) {
+						i = 0;
+					}
+					setTimeout(function() {
+						$("#" + hashlist[i]).fadeIn(450);
+					}, 500);
+				}, 2000);
+			}, 1500);
+			$("#loading").fadeOut(1000);
+			setTimeout(function() {
+				$("#frontCarousel").fadeIn("slow");
+			}, 1000);
+		});
+	</script>
+{% endblock extras %}
+
+{% block left %}
+	<h3>Kids Learn to Code!</h3>
+	<p>CoderDojo Silicon Valley teaches programming languages to youth, ages 7-17, at independently run dojos in <a href="/dojos/San%20Francisco">San Francisco</a>, <a href="/dojos/Mountain%20View">Mountain View</a>, and <a href="/dojos/San%20Jose">San Jose</a>, California.</p>
+	<p>CoderDojo Silicon Valley is a Bay Area instance of <a href="http://www.coderdojo.com">CoderDojo</a>, a global collaboration of <em>free</em> and open programing clubs run by enthusiastic volunteers. At CoderDojos around the world, young people, along with parents and mentors, learn how to code, develop websites, make apps, program games and more!</p>
+	<!--<h4>All CoderDojos are <em>free</em> to attend!</h4>-->
+	<div class="row-fluid">
+		<div class="span6">
+			<h4>Want Sessions?</h4>
+			<button class="blink btn btn-large btn-success btn-block" href="/dojos">Find Dojos</button>
+		</div>
+		<div class="span6">
+			<h4>We Need Mentors!</h4>
+			<button class="blink btn btn-large btn-success btn-block" href="/get_involved">Get Involved</button>
+		</div>
+	</div>
+	<!--<h4>More Resources</h4>
+	<p><a href='http://www.youtube.com/embed/nKIu9yen5nc?wmode=opaque&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3' class="popup" website="http://www.code.org">Code.org Video</a></p>
+	<p><a target="_blank" href="https://www.edsurge.com/guide/teaching-kids-to-code">EdSurge Article: "Teaching Kids to Code"</a></p>-->
+{% endblock left %}
+
+{% block right %}
+	<div id="mainpic">
+		<div id="loading" style="display: table; height: 354px; width: 531px; #position: relative; overflow: hidden;">
+			<div style="#position: absolute; #top: 50%; display: table-cell; vertical-align: middle;">
+				<div id="contents" style="#position: relative; #top: -50%">
+					<h1>Loading...</h1>
+				</div>
+			</div>
+		</div>
+		<div id="frontCarousel" class="carousel slide" style="display: none;">
+			<ol class="carousel-indicators">
+				<li data-target="#frontCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#frontCarousel" data-slide-to="1"></li>
+				<li data-target="#frontCarousel" data-slide-to="2"></li>
+				<li data-target="#frontCarousel" data-slide-to="3"></li>
+				<li data-target="#frontCarousel" data-slide-to="4"></li>
+				<li data-target="#frontCarousel" data-slide-to="5"></li>
+				<li data-target="#frontCarousel" data-slide-to="6"></li>
+				<li data-target="#frontCarousel" data-slide-to="7"></li>
+				<li data-target="#frontCarousel" data-slide-to="8"></li>
+			</ol>
+			<!-- Carousel items -->
+			<div class="carousel-inner">
+				<div class="active item"><img class="print" src="{{url_for('static', filename='Carousel1.jpg')}}"/></div>
+				<div class="item"><img class="print" src="{{url_for('static', filename='Carousel2.jpg')}}"/></div>
+				<div class="item"><img class="print" src="{{url_for('static', filename='Carousel3.jpg')}}"/></div>
+				<div class="item"><img class="print" src="{{url_for('static', filename='Carousel4.jpg')}}"/></div>
+				<div class="item"><img class="print" src="{{url_for('static', filename='Carousel5.jpg')}}"/></div>
+				<div class="item"><img class="print" src="{{url_for('static', filename='Carousel6.jpg')}}"/></div>
+				<div class="item"><img class="print" src="{{url_for('static', filename='Carousel7.jpg')}}"/></div>
+				<div class="item"><img class="print" src="{{url_for('static', filename='Carousel8.jpg')}}"/></div>
+				<div class="item"><img class="print" src="{{url_for('static', filename='Carousel9.jpg')}}"/></div>
+			</div>
+			<!-- Carousel nav -->
+			<a class="carousel-control left" href="#frontCarousel" data-slide="prev">&lsaquo;</a>
+			<a class="carousel-control right" href="#frontCarousel" data-slide="next">&rsaquo;</a>
+		</div>
+	</div>
+	<!--<p>Find out more about the original CoderDojo beginnings: Watch the <a href="http://www.youtube.com/embed/_bjboMjNr9Q" website="http://www.coderdojodocumentary.com/" class="popup">CoderDojo documentary.</a></p>-->
+{% endblock right %}
+
+{% block extracontent %}
+	<div class="row-fluid" style="background-color: transparent">
+		<div class="infobox homebox first printhidden span4 side" id="support">
+			<h4>Sponsors</h4>
+			<div id="supporters">
+				<p class="ay">
+				<a href="/sponsors" id="{{supone.hashtag}}"><img class="supporter" alt="{{supone.alt}}" src="{{supone.img}}"/></a>
+				</p>
+				{% for supporter in sups %}
+					<p class="ay">
+					<a href="/sponsors" id="{{supporter.hashtag}}" style="display: none;"><img class="supporter" alt="{{supporter.alt}}" src="{{supporter.img}}"/></a>
+					</p>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="infobox homebox printhidden span4 side">
+			<h4>Connect</h4>
+			<p class="icons">
+				<a class="entypo-facebook-squared socialnetwork" href="javascript:window.comingSoon('facebook')">Like</a>
+			</p>
+			<div class="space"></div>
+			<p class="icons">
+				<a class="entypo-twitter socialnetwork" href="https://twitter.com/SVCoderDojo">Follow</a>
+			</p>
+		</div>
+		<div class="infobox homebox printhidden span4 side" style="position:relative;">
+			<h4>Announcements</h4>
+			<div class="space"></div>
+			<!--Announcements-->
+				<p class="article"><a href="javascript:window.comingSoon('vo')">Volunteer Orientation</a></p>
+				<p>August 22th, 2013</p>
+				
+				<p class="article"><a href="http://www.eventbrite.com/event/7502194265">CoderDojo Divas</a></p>
+				<p>July 27th, 2013</p>
+			<!--End of Announcements-->
+			
+			<!--<button class="btn btn-success blink" style="position:absolute; right:5px; bottom:5px;" href="javascript:window.comingSoon()">Subscribe</button>-->
+		</div>
+	</div>
+	<img id="coderninja" class="printhidden" src="{{url_for('static', filename='NinjaKick.png')}}"/>
+	<img id="powered" src="{{url_for('static', filename='powered.png')}}"/>
+	<div class="dialog" id="facebook" title="Coming soon...">
+		<p class="aligncenter comicsans">WOULDN'T IT BE GREAT IF WE HAD A FACEBOOK PAGE</p>
+		<p class="aligncenter"><img src="/static/sadyinyanglogo.png"/></p>
+		<p class="aligncenter comicsans">WHY NOT MAKE ONE</p>
+		<p class="aligncenter"><a href="mailto:siliconvalley@coderdojo.com">Contact Us</a></p>
+	</div>
+{% endblock extracontent %}

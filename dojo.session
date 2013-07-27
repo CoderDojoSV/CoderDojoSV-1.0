@@ -1,0 +1,14 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="3">
+            <File firstVisibleLine="30" xOffset="0" scrollWidth="4103" startPos="1030" endPos="1030" selMode="0" lang="Python" encoding="-1" filename="C:\Users\J\Desktop\Programming\coderdojosv\server.py" />
+            <File firstVisibleLine="31" xOffset="0" scrollWidth="4103" startPos="1783" endPos="1940" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\J\Desktop\programming\coderdojosv\templates\index.html" />
+            <File firstVisibleLine="86" xOffset="0" scrollWidth="3730" startPos="1520" endPos="1520" selMode="0" lang="CSS" encoding="-1" filename="C:\Users\J\Desktop\Programming\coderdojosv\static\styles.css" />
+            <File firstVisibleLine="17" xOffset="0" scrollWidth="4103" startPos="1817" endPos="1817" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\J\Desktop\programming\coderdojosv\templates\dojos.html" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="4103" startPos="1760" endPos="1760" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\J\Desktop\programming\coderdojosv\templates\signup.html" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="4103" startPos="257" endPos="257" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\J\Desktop\Programming\coderdojosv\templates\attend.html" />
+            <File firstVisibleLine="14" xOffset="0" scrollWidth="4103" startPos="1346" endPos="1346" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\J\Desktop\Programming\coderdojosv\templates\sup.html" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

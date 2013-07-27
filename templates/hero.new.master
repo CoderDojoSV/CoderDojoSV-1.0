@@ -1,0 +1,50 @@
+{% extends "site.new.master" %}
+{% block body %}
+	<div class="containery">
+		<div class="row-fluid">
+			<div class="span12 side">
+				<p class="pull-right desktop">Use arrow keys to navigate</p>
+				<p class="pull-right tablet">Use arrow keys/tap to navigate</p>
+				<p class="pull-right mobile">Tap to navigate</p>
+				<h3>{{dojo.location}} Heroes</h3>
+				<h4 class="connected">Presenters</h4>
+				<div class="well heroes">
+					<div class="ContentFlow">
+						<div class="loadIndicator"><div class="indicator"></div></div>
+						<div class="flow">
+							{% block presenters %}
+							{% endblock presenters %}
+						</div>
+						<div class="globalCaption"></div>
+					</div>
+				</div>
+				<h4 class="connected">Mentors</h4>
+				<div class="well heroes">
+					<div class="ContentFlow">
+						<div class="loadIndicator"><div class="indicator"></div></div>
+						<div class="flow">
+							{% block mentors %}
+							{% endblock mentors %}
+						</div>
+						<div class="globalCaption"></div>
+					</div>
+				</div>
+				<h4 class="connected">Contributors</h4>
+				<div class="well heroes">
+					<div class="ContentFlow">
+						<div class="loadIndicator"><div class="indicator"></div></div>
+						<div class="flow">
+							{% block contributors %}
+							{% endblock contributors %}
+						</div>
+						<div class="globalCaption"></div>
+					</div>
+				</div>
+				<h4>And all the parents that pitch in at sessions and bring snacks!</h4>
+			</div>
+		</div>
+	</div>
+{% endblock body %}
+{% block extras %}
+	<script language="JavaScript" type="text/javascript" src="{{url_for('static', filename='contentflow.js')}}"></script>
+{% endblock extras %}
