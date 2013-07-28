@@ -9,7 +9,6 @@
 	  ga('create', 'UA-42786321-1', 'coderdojosv.com');
 	  ga('send', 'pageview');
 	</script>
-
 	<script>
 		$(function() {
 			var hashlist = [];
