@@ -25,15 +25,17 @@
 					collapsible: true,
 					heightStyle: "content"
 				});
-				window.addEventListener('contextmenu', function(e) { // Not compatibile with IE < 9
-					if (e.ctrlKey) {
-						$("#copier").show();
+
+			  	$("#logocon").mousedown(function(e) { 
+					if( e.button == 2 ) { 
+				  		$("#copier").show();
 						$("#copier").css("position", "absolute")
 						$("#copier").css("left", e.pageX)
 						$("#copier").css("top", e.pageY-160)
 						e.preventDefault();
-					}
-				}, false);
+					} 
+					return true; 
+			  	});
 				$("#closedev").click(function() {
 					$("#copier").hide();
 					return false;
@@ -155,7 +157,7 @@
 			<strong>Warning!</strong> Because you are using Internet Explorer, some features might not work on this website. Please try another browser, such as <a href="http://www.google.com/chrome">Google Chrome</a> or <a href="http://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox.</a>
 			<button type="button" class="close alert-fixed-top pull-right" data-dismiss="alert">&times;</button>
 		</div>
-		<div id="logocon">
+		<div id="logocon" oncontextmenu="return false;">
 			<div class="containery">
 				<div class="row-fluid nobg" style="box-shadow: none;">
 					<div class="span12">
@@ -190,8 +192,8 @@
 		</div><!-- /navbar -->
 		<div class="dropdown">
 			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" id="copier">
-				<li role="presentation" class="disabled black">CoderDojo Control Panel</li>
-				<li role="presentation"><a href="#" id="closedev">Okay</a></li>
+				<li role="presentation" class="disabled black">Brushed metal texture by myfreetextures.org</li>
+				<li role="presentation"><a href="#" id="closedev">Close</a></li>
 			</ul>
 		</div>
 		<div class="dialog" id="vo" title="Join Us!">
