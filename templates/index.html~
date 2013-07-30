@@ -127,10 +127,10 @@
 			<div class="space"></div>
 			<!--Announcements-->
 				<p class="article"><a href="javascript:window.comingSoon('vo')">Volunteer Orientation</a></p>
-				<p>August 22th, 2013</p>
+				<p class="sender">August 22nd, 2013</p>
 				
 				<p class="article">No Dojo Sessions in August</p>
-				<p>Check Back Soon!</p>
+				<p class="sender">Check Back Soon!</p>
 			<!--End of Announcements-->
 			
 			<!--<button class="btn btn-success blink" style="position:absolute; right:5px; bottom:5px;" href="javascript:window.comingSoon()">Subscribe</button>-->
