@@ -381,11 +381,12 @@ td {
 }
 
 .homebox {
-	width: 297px;
-	/*overflow-y: off;*/
+	/*width: 297px;
+	overflow-y: off;*/
 	margin-top: 20px;
 	margin-bottom: 10px;
 	/*height: 195px;*/
+	padding-left: 10px;
 	padding-left: 10px;
 }
 
@@ -464,7 +465,7 @@ div a {
 }
 #cylonNinja {
 	position: fixed;
-	right: 50%;
+	right: 50px;
 	/*bottom: -86px;*/
 	bottom: -215px;
 	width: 230px;

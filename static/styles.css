@@ -381,12 +381,13 @@ td {
 }
 
 .homebox {
-	width: 297px;
-	/*overflow-y: off;*/
+	/*width: 297px;
+	overflow-y: off;*/
 	margin-top: 20px;
 	margin-bottom: 10px;
 	/*height: 195px;*/
 	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .space {
