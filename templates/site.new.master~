@@ -157,7 +157,7 @@
 			<strong>Warning!</strong> Because you are using Internet Explorer, some features might not work on this website. Please try another browser, such as <a href="http://www.google.com/chrome">Google Chrome</a> or <a href="http://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox.</a>
 			<button type="button" class="close alert-fixed-top pull-right" data-dismiss="alert">&times;</button>
 		</div>
-		<div id="logocon">
+		<div id="logocon" oncontextmenu="return false;">
 			<div class="containery">
 				<div class="row-fluid nobg" style="box-shadow: none;">
 					<div class="span12">
