@@ -404,11 +404,14 @@ h3, h4 {
 
 .supporter {
 	width: auto;
-	height: 70px;
+	height: auto;
+	max-width: 215px;
 }
 
 .homebox .supporter {
 	margin-top: 10px;
+	width: auto;
+	height: 70px;
 }
 
 .homebox .ay {
