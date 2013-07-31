@@ -25,6 +25,10 @@
 					collapsible: true,
 					heightStyle: "content"
 				});
+				//setInterval(function() {
+				//	$("#cylonNinja").animate({"right": "50%"}, 0);
+				//	$("#cylonNinja").animate({"right": "-=100"}, 0);
+				//}, 10);
 
 			  	$("#logocon").mousedown(function(e) { 
 					if( e.button == 2 ) { 
@@ -36,6 +40,9 @@
 					} 
 					return true; 
 			  	});
+				$("#containery").mousedown(function(e) {
+					$("#copier").hide();
+				});
 				$("#closedev").click(function() {
 					$("#copier").hide();
 					return false;
@@ -192,15 +199,15 @@
 		</div><!-- /navbar -->
 		<div class="dropdown">
 			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" id="copier">
-				<li role="presentation" class="disabled black">Brushed metal texture by myfreetextures.org</li>
+				<li role="presentation" class="disabled black">Brushed metal texture by myfreetextures.com</li>
 				<li role="presentation"><a href="#" id="closedev">Close</a></li>
 			</ul>
 		</div>
 		<div class="dialog" id="vo" title="Join Us!">
-			<p>Calling all mentors, presenters and those interested in planning the 2013/14 sessions for Mountain View and San Jose!</p>
+			<p>Calling all mentors, presenters and those interested in planning the 2013/14 sessions for Mountain View or San Jose!</p>
 			<p>Come to our orientation at the Irish Innovation Center in Downtown San Jose</p>
-			<p>7:008:30 p.m on Thursday, August 22nd, 2013</p>
-			<p>RSVP to <a href="mailto:tiffanyoverbo@gmail.com?subject=RSVP%20Volunteer%20Orientation">Tiffany</a></p>
+			<p>7:00-8:30 p.m on Thursday, August 22nd, 2013</p>
+			<p>RSVP to <a href="mailto:tiffanyTOverbo@gmail.com?subject=RSVP%20Volunteer%20Orientation">Tiffany Overbo</a></p>
 		</div>
 		<!--[if IE]>
 			<script>document.documentElement.className+='ie';</script>
@@ -209,10 +216,16 @@
 		
 		{% block body %}
 		{% endblock body %}
-		<!--<div class="row-fluid footer">
-			<div class="span12 inner">
-				<p class="aligncenter">2013 CoderDojo Silicon Valley</p>
+		<div id="fc">
+			<div id="footer">
+				<div id="footer-inner">
+					<nav>
+						<i>2013 CoderDojo Silicon Valley</i> |
+						<a href="mailto:siliconvalley@coderdojo.com">Contact</a> |
+						<a href="javascript:window.comingSoon()">Credits</a>
+					</nav>
+				</div>
 			</div>
-		</div>-->
+		</div>
 	</body>
 </html>
