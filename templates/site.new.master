@@ -73,6 +73,14 @@
 						top: "-=50"
 					}, "slow");
 				});
+				setInterval(function() {
+					if ($("body").height() > $(window).height()) {
+						$("#footer").css("position", "inherit");
+					} else {
+						$("#footer").css("position", "fixed");
+						$("#footer").css("bottom", "0");
+					}
+				}, 50);
 				$("#buyu").mouseover(function() {
 					$("#dojomojo").fadeIn();
 					$("#buyu").animate({
@@ -213,6 +221,7 @@
 		
 		{% block body %}
 		{% endblock body %}
+		<br/>
 		<div id="fc">
 			<div id="footer">
 				<div id="footer-inner">

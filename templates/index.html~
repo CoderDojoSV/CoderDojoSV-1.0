@@ -126,7 +126,7 @@
 		</div>
 		<div class="infobox homebox printhidden span4 side" style="position:relative;">
 			<h4>Announcements</h4>
-			<div class="well">
+			<div>
 				<div class="space"></div>
 				<div>
 				<!--Announcements-->

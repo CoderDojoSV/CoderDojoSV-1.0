@@ -40,9 +40,6 @@
 					} 
 					return true; 
 			  	});
-				$("#containery").mousedown(function(e) {
-					$("#copier").hide();
-				});
 				$("#closedev").click(function() {
 					$("#copier").hide();
 					return false;
@@ -76,6 +73,14 @@
 						top: "-=50"
 					}, "slow");
 				});
+				setInterval(function() {
+					if ($("body").height() > $(window).height()) {
+						$("#footer").css("position", "inherit");
+					} else {
+						$("#footer").css("position", "fixed");
+						$("#footer").css("bottom", "0");
+					}
+				}, 50);
 				$("#buyu").mouseover(function() {
 					$("#dojomojo").fadeIn();
 					$("#buyu").animate({

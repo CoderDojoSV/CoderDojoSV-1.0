@@ -27,270 +27,267 @@
 			}
 	</style>
 	<div id="mc_embed_signup">
-		<form action="http://coderdojosv.us6.list-manage1.com/subscribe/post?u=3563ea3f0a8ae78b09f1fea36&amp;id=27c567c77e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-		<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-		<div class="mc-field-group">
-		<label for="mce-EMAIL">Email Address (Parent's email if you are under 14)  <span class="asterisk">*</span>
-		</label>
-		<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-		</div>
-		<div class="mc-field-group">
-		<label for="mce-FNAME">First Name  <span class="asterisk">*</span>
-		</label>
-		<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
-		</div>
-		<div class="mc-field-group">
-		<label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
-		</label>
-		<input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
-		</div>
-		<div class="mc-field-group">
-		<label for="mce-MMERGE4">Add anything you'd like us to know about you. </label>
-		<textarea height="300px" value="" name="MMERGE4" class="" id="mce-MMERGE4"></textarea>
-		</div>
-		<div class="mc-field-group input-group">
-			<strong>I am interested in helping at: </strong>
-			<ul><li><input type="checkbox" value="1" name="group[12481][1]" id="mce-group[12481]-12481-0"><label for="mce-group[12481]-12481-0">Mountain View</label></li>
-		<li><input type="checkbox" value="2" name="group[12481][2]" id="mce-group[12481]-12481-1"><label for="mce-group[12481]-12481-1">San Jose</label></li>
-		</ul>
-		</div>
-		<div class="mc-field-group input-group">
-			<strong>I am interested in becoming a: </strong>
-			<ul><li><input type="checkbox" value="4" name="group[12485][4]" id="mce-group[12485]-12485-0"><label for="mce-group[12485]-12485-0">Mentor - Roam the room and answer technical questions at sessions</label></li>
-		<li><input type="checkbox" value="8" name="group[12485][8]" id="mce-group[12485]-12485-1"><label for="mce-group[12485]-12485-1">Youth Mentor - Under 14 years old</label></li>
-		<li><input type="checkbox" value="16" name="group[12485][16]" id="mce-group[12485]-12485-2"><label for="mce-group[12485]-12485-2">Presenter - Lead a project-based instruction</label></li>
-		<li><input type="checkbox" value="8192" name="group[12485][8192]" id="mce-group[12485]-12485-3"><label for="mce-group[12485]-12485-3">Helper - Assist with logistics, communications, short-term tasks</label></li>
-		<li><input type="checkbox" value="262144" name="group[12485][262144]" id="mce-group[12485]-12485-4"><label for="mce-group[12485]-12485-4">Organizer - Contribute to the vision and goals for the organization</label></li>
-		</ul>
-		</div>
-		<div class="mc-field-group input-group">
-			<strong>I am comfortable mentoring in the following areas: </strong>
-			<ul><li><input type="checkbox" value="32" name="group[12489][32]" id="mce-group[12489]-12489-0"><label for="mce-group[12489]-12489-0">Scratch/Tynker</label></li>
-		<li><input type="checkbox" value="64" name="group[12489][64]" id="mce-group[12489]-12489-1"><label for="mce-group[12489]-12489-1">Python</label></li>
-		<li><input type="checkbox" value="128" name="group[12489][128]" id="mce-group[12489]-12489-2"><label for="mce-group[12489]-12489-2">Ruby</label></li>
-		<li><input type="checkbox" value="256" name="group[12489][256]" id="mce-group[12489]-12489-3"><label for="mce-group[12489]-12489-3">Web Development</label></li>
-		<li><input type="checkbox" value="512" name="group[12489][512]" id="mce-group[12489]-12489-4"><label for="mce-group[12489]-12489-4">C++</label></li>
-		<li><input type="checkbox" value="1024" name="group[12489][1024]" id="mce-group[12489]-12489-5"><label for="mce-group[12489]-12489-5">Mobile Apps</label></li>
-		<li><input type="checkbox" value="2048" name="group[12489][2048]" id="mce-group[12489]-12489-6"><label for="mce-group[12489]-12489-6">Unity</label></li>
-		<li><input type="checkbox" value="4096" name="group[12489][4096]" id="mce-group[12489]-12489-7"><label for="mce-group[12489]-12489-7">Java</label></li>
-		<li><input type="checkbox" value="16384" name="group[12489][16384]" id="mce-group[12489]-12489-8"><label for="mce-group[12489]-12489-8">Minecraft Modding</label></li>
-		<li><input type="checkbox" value="32768" name="group[12489][32768]" id="mce-group[12489]-12489-9"><label for="mce-group[12489]-12489-9">Robotics</label></li>
-		<li><input type="checkbox" value="65536" name="group[12489][65536]" id="mce-group[12489]-12489-10"><label for="mce-group[12489]-12489-10">Microcontrollers - Arduino/RasPi</label></li>
-		<li><input type="checkbox" value="131072" name="group[12489][131072]" id="mce-group[12489]-12489-11"><label for="mce-group[12489]-12489-11">Electronics</label></li>
-		<li><input type="checkbox" value="524288" name="group[12489][524288]" id="mce-group[12489]-12489-12"><label for="mce-group[12489]-12489-12">Other</label></li>
-		</ul>
-		</div>
-		<div class="mc-field-group input-group">
-			<strong>I am a: </strong>
-			<ul><li><input type="checkbox" value="1048576" name="group[12517][1048576]" id="mce-group[12517]-12517-0"><label for="mce-group[12517]-12517-0">Professional Programmer or Computer Scientist</label></li>
-		<li><input type="checkbox" value="2097152" name="group[12517][2097152]" id="mce-group[12517]-12517-1"><label for="mce-group[12517]-12517-1">Electrical Engineer or Other Technical Professional</label></li>
-		<li><input type="checkbox" value="4194304" name="group[12517][4194304]" id="mce-group[12517]-12517-2"><label for="mce-group[12517]-12517-2">Electronics Hobbyist</label></li>
-		<li><input type="checkbox" value="8388608" name="group[12517][8388608]" id="mce-group[12517]-12517-3"><label for="mce-group[12517]-12517-3">University Student</label></li>
-		<li><input type="checkbox" value="16777216" name="group[12517][16777216]" id="mce-group[12517]-12517-4"><label for="mce-group[12517]-12517-4">High School Student</label></li>
-		<li><input type="checkbox" value="33554432" name="group[12517][33554432]" id="mce-group[12517]-12517-5"><label for="mce-group[12517]-12517-5">Youth, under 14 years old</label></li>
-		<li><input type="checkbox" value="67108864" name="group[12517][67108864]" id="mce-group[12517]-12517-6"><label for="mce-group[12517]-12517-6">Parent</label></li>
-		<li><input type="checkbox" value="134217728" name="group[12517][134217728]" id="mce-group[12517]-12517-7"><label for="mce-group[12517]-12517-7">Other</label></li>
-		</ul>
-		</div>
-		<div class="mc-field-group input-group">
+<form action="http://coderdojosv.us6.list-manage.com/subscribe/post?u=3563ea3f0a8ae78b09f1fea36&amp;id=27c567c77e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <h2>Subscribe to our mailing list</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address (Parent's email if you are under 14)  <span class="asterisk">*</span>
+</label>
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+        <label for="mce-FNAME">First Name  <span class="asterisk">*</span>
+</label>
+        <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+        <label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
+</label>
+        <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+</div>
+<div class="mc-field-group">
+        <label for="mce-MMERGE3">Add anything you'd like us to know about you. </label>
+        <textarea value="" name="MMERGE3" class="" id="mce-MMERGE3"></textarea>
+</div>
+<div class="mc-field-group input-group">
+    <strong>I am interested in helping at: </strong>
+    <ul><li><input type="checkbox" value="1" name="group[12481][1]" id="mce-group[12481]-12481-0"><label for="mce-group[12481]-12481-0">Mountain View</label></li>
+<li><input type="checkbox" value="2" name="group[12481][2]" id="mce-group[12481]-12481-1"><label for="mce-group[12481]-12481-1">San Jose</label></li>
+</ul>
+</div>
+<div class="mc-field-group input-group">
+    <strong>I am interested in becoming a/an: </strong>
+    <ul><li><input type="checkbox" value="4" name="group[12485][4]" id="mce-group[12485]-12485-0"><label for="mce-group[12485]-12485-0">Mentor - Roam the room and answer technical questions at sessions</label></li>
+<li><input type="checkbox" value="8" name="group[12485][8]" id="mce-group[12485]-12485-1"><label for="mce-group[12485]-12485-1">Presenter - Lead a project-based instruction</label></li>
+<li><input type="checkbox" value="4096" name="group[12485][4096]" id="mce-group[12485]-12485-2"><label for="mce-group[12485]-12485-2">Helper - Assist with logistics, communications, short-term tasks</label></li>
+<li><input type="checkbox" value="65536" name="group[12485][65536]" id="mce-group[12485]-12485-3"><label for="mce-group[12485]-12485-3">Organizer - Contribute to the vision and goals for the organization</label></li>
+</ul>
+</div>
+<div class="mc-field-group input-group">
+    <strong>I am comfortable mentoring in the following areas: </strong>
+    <ul><li><input type="checkbox" value="16" name="group[12489][16]" id="mce-group[12489]-12489-0"><label for="mce-group[12489]-12489-0">Scratch/Tynker</label></li>
+<li><input type="checkbox" value="32" name="group[12489][32]" id="mce-group[12489]-12489-1"><label for="mce-group[12489]-12489-1">Python</label></li>
+<li><input type="checkbox" value="64" name="group[12489][64]" id="mce-group[12489]-12489-2"><label for="mce-group[12489]-12489-2">Ruby</label></li>
+<li><input type="checkbox" value="128" name="group[12489][128]" id="mce-group[12489]-12489-3"><label for="mce-group[12489]-12489-3">Web Development</label></li>
+<li><input type="checkbox" value="256" name="group[12489][256]" id="mce-group[12489]-12489-4"><label for="mce-group[12489]-12489-4">C++</label></li>
+<li><input type="checkbox" value="512" name="group[12489][512]" id="mce-group[12489]-12489-5"><label for="mce-group[12489]-12489-5">Mobile Apps</label></li>
+<li><input type="checkbox" value="1024" name="group[12489][1024]" id="mce-group[12489]-12489-6"><label for="mce-group[12489]-12489-6">Unity</label></li>
+<li><input type="checkbox" value="2048" name="group[12489][2048]" id="mce-group[12489]-12489-7"><label for="mce-group[12489]-12489-7">Java</label></li>
+<li><input type="checkbox" value="8192" name="group[12489][8192]" id="mce-group[12489]-12489-8"><label for="mce-group[12489]-12489-8">Minecraft Modding</label></li>
+<li><input type="checkbox" value="16384" name="group[12489][16384]" id="mce-group[12489]-12489-9"><label for="mce-group[12489]-12489-9">Robotics</label></li>
+<li><input type="checkbox" value="32768" name="group[12489][32768]" id="mce-group[12489]-12489-10"><label for="mce-group[12489]-12489-10">Microcontrollers - Arduino/RasPi</label></li>
+<li><input type="checkbox" value="131072" name="group[12489][131072]" id="mce-group[12489]-12489-11"><label for="mce-group[12489]-12489-11">Other</label></li>
+</ul>
+</div>
+<div class="mc-field-group input-group">
+    <strong>I am a/an: </strong>
+    <ul><li><input type="checkbox" value="262144" name="group[12517][262144]" id="mce-group[12517]-12517-0"><label for="mce-group[12517]-12517-0">Professional Programmer or Computer Scientist</label></li>
+<li><input type="checkbox" value="524288" name="group[12517][524288]" id="mce-group[12517]-12517-1"><label for="mce-group[12517]-12517-1">Other Technical Professional</label></li>
+<li><input type="checkbox" value="1048576" name="group[12517][1048576]" id="mce-group[12517]-12517-2"><label for="mce-group[12517]-12517-2">University Student</label></li>
+<li><input type="checkbox" value="2097152" name="group[12517][2097152]" id="mce-group[12517]-12517-3"><label for="mce-group[12517]-12517-3">High School Student</label></li>
+<li><input type="checkbox" value="4194304" name="group[12517][4194304]" id="mce-group[12517]-12517-4"><label for="mce-group[12517]-12517-4">Youth, under 14 years old</label></li>
+<li><input type="checkbox" value="8388608" name="group[12517][8388608]" id="mce-group[12517]-12517-5"><label for="mce-group[12517]-12517-5">Parent</label></li>
+<li><input type="checkbox" value="16777216" name="group[12517][16777216]" id="mce-group[12517]-12517-6"><label for="mce-group[12517]-12517-6">Other</label></li>
+</ul>
+</div>
+<div class="mc-field-group input-group">
     <strong>Do you have membership at: </strong>
-    <ul><li><input type="checkbox" value="67108864" name="group[12525][67108864]" id="mce-group[12525]-12525-0"><label for="mce-group[12525]-12525-0">Hacker Dojo Mountain View</label></li>
-<li><input type="checkbox" value="134217728" name="group[12525][134217728]" id="mce-group[12525]-12525-1"><label for="mce-group[12525]-12525-1">Tech Shop San Jose</label></li>
-<li><input type="checkbox" value="268435456" name="group[12525][268435456]" id="mce-group[12525]-12525-2"><label for="mce-group[12525]-12525-2">Other Hacker Space</label></li>
+    <ul><li><input type="checkbox" value="33554432" name="group[12525][33554432]" id="mce-group[12525]-12525-0"><label for="mce-group[12525]-12525-0">Hacker Dojo Mountain View</label></li>
+<li><input type="checkbox" value="67108864" name="group[12525][67108864]" id="mce-group[12525]-12525-1"><label for="mce-group[12525]-12525-1">Tech Shop San Jose</label></li>
+<li><input type="checkbox" value="134217728" name="group[12525][134217728]" id="mce-group[12525]-12525-2"><label for="mce-group[12525]-12525-2">Other Hacker Space</label></li>
 </ul>
 </div>
 <div class="mc-field-group input-group">
     <strong>Would your company have space for dojo meetings? </strong>
-    <ul><li><input type="radio" value="536870912" name="group[12529]" id="mce-group[12529]-12529-0"><label for="mce-group[12529]-12529-0">Yes</label></li>
-<li><input type="radio" value="1073741824" name="group[12529]" id="mce-group[12529]-12529-1"><label for="mce-group[12529]-12529-1">No</label></li>
-<li><input type="radio" value="2147483648" name="group[12529]" id="mce-group[12529]-12529-2"><label for="mce-group[12529]-12529-2">Maybe, I'm willing to check</label></li>
+    <ul><li><input type="radio" value="268435456" name="group[12529]" id="mce-group[12529]-12529-0"><label for="mce-group[12529]-12529-0">Yes</label></li>
+<li><input type="radio" value="536870912" name="group[12529]" id="mce-group[12529]-12529-1"><label for="mce-group[12529]-12529-1">No</label></li>
+<li><input type="radio" value="1073741824" name="group[12529]" id="mce-group[12529]-12529-2"><label for="mce-group[12529]-12529-2">Maybe, I'm willing to check</label></li>
 </ul>
 </div>
 <div class="mc-field-group input-group">
     <strong>Do you attend a school or home coding club? </strong>
-    <ul><li><input type="radio" value="4294967296" name="group[12537]" id="mce-group[12537]-12537-0"><label for="mce-group[12537]-12537-0">Yes</label></li>
-<li><input type="radio" value="8589934592" name="group[12537]" id="mce-group[12537]-12537-1"><label for="mce-group[12537]-12537-1">No</label></li>
-<li><input type="radio" value="17179869184" name="group[12537]" id="mce-group[12537]-12537-2"><label for="mce-group[12537]-12537-2">Not yet, but would like to start one</label></li>
+    <ul><li><input type="radio" value="2147483648" name="group[12537]" id="mce-group[12537]-12537-0"><label for="mce-group[12537]-12537-0">Yes</label></li>
+<li><input type="radio" value="4294967296" name="group[12537]" id="mce-group[12537]-12537-1"><label for="mce-group[12537]-12537-1">No</label></li>
+<li><input type="radio" value="8589934592" name="group[12537]" id="mce-group[12537]-12537-2"><label for="mce-group[12537]-12537-2">Not yet, but would like to start one</label></li>
 </ul>
 </div>
-		<input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success btn-large btn-block"></div>
-<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none;color:red;"></div>
-		<div class="response" id="mce-success-response" style="display:none;color:green;"></div>
-		</div>
-		</form>
-		</div>
-		<script type="text/javascript">
-		var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[4]='MMERGE4';ftypes[4]='text';
-		try {
-			var jqueryLoaded=jQuery;
-			jqueryLoaded=true;
-		} catch(err) {
-			var jqueryLoaded=false;
-		}
-		var head= document.getElementsByTagName('head')[0];
-		if (!jqueryLoaded) {
-			var script = document.createElement('script');
-			script.type = 'text/javascript';
-			script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
-			head.appendChild(script);
-			if (script.readyState && script.onload!==null){
-				script.onreadystatechange= function () {
-				      if (this.readyState == 'complete') mce_preload_check();
-				}    
-			}
-		}
-		var script = document.createElement('script');
-		script.type = 'text/javascript';
-		script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
-		head.appendChild(script);
-		var err_style = '';
-		try{
-			err_style = mc_custom_error_style;
-		} catch(e){
-			err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
-		}
-		var head= document.getElementsByTagName('head')[0];
-		var style= document.createElement('style');
-		style.type= 'text/css';
-		if (style.styleSheet) {
-		  style.styleSheet.cssText = err_style;
-		} else {
-		  style.appendChild(document.createTextNode(err_style));
-		}
-		head.appendChild(style);
-		setTimeout('mce_preload_check();', 250);
+     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-block btn-success"></div>
+	<div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none;color:red;"></div>
+                <div class="response" id="mce-success-response" style="display:none;color:green;"></div>
+        </div>
+</form>
+</div>
+<script type="text/javascript">
+var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='text';
+try {
+    var jqueryLoaded=jQuery;
+    jqueryLoaded=true;
+} catch(err) {
+    var jqueryLoaded=false;
+}
+var head= document.getElementsByTagName('head')[0];
+if (!jqueryLoaded) {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
+    head.appendChild(script);
+    if (script.readyState && script.onload!==null){
+        script.onreadystatechange= function () {
+              if (this.readyState == 'complete') mce_preload_check();
+        }
+    }
+}
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+head.appendChild(script);
+var err_style = '';
+try{
+    err_style = mc_custom_error_style;
+} catch(e){
+    err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
+}
+var head= document.getElementsByTagName('head')[0];
+var style= document.createElement('style');
+style.type= 'text/css';
+if (style.styleSheet) {
+  style.styleSheet.cssText = err_style;
+} else {
+  style.appendChild(document.createTextNode(err_style));
+}
+head.appendChild(style);
+setTimeout('mce_preload_check();', 250);
 
-		var mce_preload_checks = 0;
-		function mce_preload_check(){
-			if (mce_preload_checks>40) return;
-			mce_preload_checks++;
-			try {
-				var jqueryLoaded=jQuery;
-			} catch(err) {
-				setTimeout('mce_preload_check();', 250);
-				return;
-			}
-			try {
-				var validatorLoaded=jQuery("#fake-form").validate({});
-			} catch(err) {
-				setTimeout('mce_preload_check();', 250);
-				return;
-			}
-			mce_init_form();
-		}
-		function mce_init_form(){
-			jQuery(document).ready( function($) {
-			  var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
-			  var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
-			  $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
-			  options = { url: 'http://coderdojosv.us6.list-manage1.com/subscribe/post-json?u=3563ea3f0a8ae78b09f1fea36&id=27c567c77e&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
-				            beforeSubmit: function(){
-				                $('#mce_tmp_error_msg').remove();
-				                $('.datefield','#mc_embed_signup').each(
-				                    function(){
-				                        var txt = 'filled';
-				                        var fields = new Array();
-				                        var i = 0;
-				                        $(':text', this).each(
-				                            function(){
-				                                fields[i] = this;
-				                                i++;
-				                            });
-				                        $(':hidden', this).each(
-				                            function(){
-				                                var bday = false;
-				                                if (fields.length == 2){
-				                                    bday = true;
-				                                    fields[2] = {'value':1970};//trick birthdays into having years
-				                                }
-				                            if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
-				                            this.value = '';
-		   } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
-				                            this.value = '';
-		   } else {
-			   if (/\[day\]/.test(fields[0].name)){
-				                                   this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;	       
-			   } else {
-				                                   this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
-				                               }
-				                           }
-				                            });
-				                    });
-				                return mce_validator.form();
-				            }, 
-				            success: mce_success_cb
-				        };
-			  $('#mc-embedded-subscribe-form').ajaxForm(options);
-			  
-			  
-			});
-		}
-		function mce_success_cb(resp){
-			$('#mce-success-response').hide();
-			$('#mce-error-response').hide();
-			if (resp.result=="success"){
-				$('#mce-'+resp.result+'-response').show();
-				$('#mce-'+resp.result+'-response').html(resp.msg);
-				$('#mc-embedded-subscribe-form').each(function(){
-				    this.reset();
-			});
-			} else {
-				var index = -1;
-				var msg;
-				try {
-				    var parts = resp.msg.split(' - ',2);
-				    if (parts[1]==undefined){
-				        msg = resp.msg;
-				    } else {
-				        i = parseInt(parts[0]);
-				        if (i.toString() == parts[0]){
-				            index = parts[0];
-				            msg = parts[1];
-				        } else {
-				            index = -1;
-				            msg = resp.msg;
-				        }
-				    }
-				} catch(e){
-				    index = -1;
-				    msg = resp.msg;
-				}
-				try{
-				    if (index== -1){
-				        $('#mce-'+resp.result+'-response').show();
-				        $('#mce-'+resp.result+'-response').html(msg);            
-				    } else {
-				        err_id = 'mce_tmp_error_msg';
-				        html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
-				        
-				        var input_id = '#mc_embed_signup';
-				        var f = $(input_id);
-				        if (ftypes[index]=='address'){
-				            input_id = '#mce-'+fnames[index]+'-addr1';
-				            f = $(input_id).parent().parent().get(0);
-				        } else if (ftypes[index]=='date'){
-				            input_id = '#mce-'+fnames[index]+'-month';
-				            f = $(input_id).parent().parent().get(0);
-				        } else {
-				            input_id = '#mce-'+fnames[index];
-				            f = $().parent(input_id).get(0);
-				        }
-				        if (f){
-				            $(f).append(html);
-				            $(input_id).focus();
-				        } else {
-				            $('#mce-'+resp.result+'-response').show();
-				            $('#mce-'+resp.result+'-response').html(msg);
-				        }
-				    }
-				} catch(e){
-				    $('#mce-'+resp.result+'-response').show();
-				    $('#mce-'+resp.result+'-response').html(msg);
-				}
-			}
-		}
+var mce_preload_checks = 0;
+function mce_preload_check(){
+    if (mce_preload_checks>40) return;
+    mce_preload_checks++;
+    try {
+        var jqueryLoaded=jQuery;
+    } catch(err) {
+        setTimeout('mce_preload_check();', 250);
+        return;
+    }
+    try {
+        var validatorLoaded=jQuery("#fake-form").validate({});
+    } catch(err) {
+        setTimeout('mce_preload_check();', 250);
+        return;
+    }
+    mce_init_form();
+}
+function mce_init_form(){
+    jQuery(document).ready( function($) {
+      var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
+      var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
+      $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
+      options = { url: 'http://coderdojosv.us6.list-manage.com/subscribe/post-json?u=3563ea3f0a8ae78b09f1fea36&id=27c567c77e&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+                    beforeSubmit: function(){
+                        $('#mce_tmp_error_msg').remove();
+                        $('.datefield','#mc_embed_signup').each(
+                            function(){
+                                var txt = 'filled';
+                                var fields = new Array();
+                                var i = 0;
+                                $(':text', this).each(
+                                    function(){
+                                        fields[i] = this;
+                                        i++;
+                                    });
+                                $(':hidden', this).each(
+                                    function(){
+                                        var bday = false;
+                                        if (fields.length == 2){
+                                            bday = true;
+                                            fields[2] = {'value':1970};//trick birthdays into having years
+                                        }
+                                        if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
+                                                this.value = '';
+                                                                            } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
+                                                this.value = '';
+                                                                            } else {
+                                                                                if (/\[day\]/.test(fields[0].name)){
+                                                this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;
+                                                                                } else {
+                                                this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+                                                }
+                                            }
+                                    });
+                            });
+                        return mce_validator.form();
+                    },
+                    success: mce_success_cb
+                };
+      $('#mc-embedded-subscribe-form').ajaxForm(options);
 
-		</script>
-		<!--End mc_embed_signup-->
+
+    });
+}
+function mce_success_cb(resp){
+    $('#mce-success-response').hide();
+    $('#mce-error-response').hide();
+    if (resp.result=="success"){
+        $('#mce-'+resp.result+'-response').show();
+        $('#mce-'+resp.result+'-response').html(resp.msg);
+        $('#mc-embedded-subscribe-form').each(function(){
+            this.reset();
+        });
+    } else {
+        var index = -1;
+        var msg;
+        try {
+            var parts = resp.msg.split(' - ',2);
+            if (parts[1]==undefined){
+                msg = resp.msg;
+            } else {
+                i = parseInt(parts[0]);
+                if (i.toString() == parts[0]){
+                    index = parts[0];
+                    msg = parts[1];
+                } else {
+                    index = -1;
+                    msg = resp.msg;
+                }
+            }
+        } catch(e){
+            index = -1;
+            msg = resp.msg;
+        }
+        try{
+            if (index== -1){
+                $('#mce-'+resp.result+'-response').show();
+                $('#mce-'+resp.result+'-response').html(msg);
+            } else {
+                err_id = 'mce_tmp_error_msg';
+                html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
+
+                var input_id = '#mc_embed_signup';
+                var f = $(input_id);
+                if (ftypes[index]=='address'){
+                    input_id = '#mce-'+fnames[index]+'-addr1';
+                    f = $(input_id).parent().parent().get(0);
+                } else if (ftypes[index]=='date'){
+                    input_id = '#mce-'+fnames[index]+'-month';
+                    f = $(input_id).parent().parent().get(0);
+                } else {
+                    input_id = '#mce-'+fnames[index];
+                    f = $().parent(input_id).get(0);
+                }
+                if (f){
+                    $(f).append(html);
+                    $(input_id).focus();
+                } else {
+                    $('#mce-'+resp.result+'-response').show();
+                    $('#mce-'+resp.result+'-response').html(msg);
+                }
+            }
+        } catch(e){
+            $('#mce-'+resp.result+'-response').show();
+            $('#mce-'+resp.result+'-response').html(msg);
+        }
+    }
+}
+
+</script>
 {% endblock right %}
