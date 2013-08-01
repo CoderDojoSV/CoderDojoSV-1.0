@@ -29,6 +29,7 @@
 				}, 2000);
 			}, 1500);
 			$("#loading").fadeOut(1000);
+			$("#lt").text("Loading...");
 			setTimeout(function() {
 				$("#frontCarousel").fadeIn("slow");
 			}, 1000);
@@ -44,11 +45,11 @@
 	<div class="row-fluid nobg">
 		<div class="span6">
 			<h4>Want Sessions?</h4>
-			<button class="blink btn btn-large btn-success btn-block" href="/dojos">Find Dojos</button>
+			<a class="btn btn-large btn-success btn-block" href="/dojos">Find Dojos</a>
 		</div>
 		<div class="span6">
 			<h4>We Need Mentors!</h4>
-			<button class="blink btn btn-large btn-success btn-block" href="/get_involved">Get Involved</button>
+			<a class="btn btn-large btn-success btn-block" href="/get_involved">Get Involved</a>
 		</div>
 	</div>
 	<!--<h4>More Resources</h4>
@@ -61,7 +62,7 @@
 		<div id="loading" style="display: table; height: 354px; width: 531px; #position: relative; overflow: hidden;">
 			<div style="#position: absolute; #top: 50%; display: table-cell; vertical-align: middle;">
 				<div id="contents" style="#position: relative; #top: -50%">
-					<h1>Loading...</h1>
+					<h1 id="lt">No Javascript...</h1>
 				</div>
 			</div>
 		</div>
@@ -120,7 +121,7 @@
 				</p>
 				<div class="space"></div>
 				<p class="icons aligncenter">
-					<a class="entypo-twitter socialnetwork" href="https://twitter.com/SVCoderDojo">Follow</a>
+					<a class="entypo-twitter socialnetwork" target="_blank" href="https://twitter.com/SVCoderDojo">Follow</a>
 				</p>
 			</div>
 		</div>

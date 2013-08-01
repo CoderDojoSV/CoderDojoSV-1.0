@@ -37,7 +37,7 @@
 			{% endif %}
 			<p><button class="btn disabled btn-block btn-success" disabled>Photo Gallery</button></p>
 			{% if hasheroes == "true" %}
-				<p><a target="_blank" class="btn btn-block btn-success" href="/dojos/{{dojo.location}}/heroes">Dojo Heroes</a></p>
+				<p><a target="blank" class="btn btn-block btn-success" href="/dojos/{{dojo.location}}/heroes">Dojo Heroes</a></p>
 			{% else %}
 				<p><button class="btn btn-block btn-success disabled" disabled>Dojo Heroes</button></p>
 			{% endif %}

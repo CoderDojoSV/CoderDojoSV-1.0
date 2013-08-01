@@ -20,7 +20,7 @@
 		<p class="article">February 29th, 2012 - <a target="_blank" href="http://techcrunch.com/2012/02/29/coderdojo-hits-the-us/">CoderDojo Hits the US</a></p>
 		<p class="sender">TechCrunch</p>
 
-		<p class="article">February 28th, 2012 - <a target="_blank" href="https://github.com/blog/1062-our-first-github-coderdojo-session">GitHub's First CoderDojo Session</a></p>
+		<p class="article">February 28th, 2012 - <a href="https://github.com/blog/1062-our-first-github-coderdojo-session">GitHub's First CoderDojo Session</a></p>
 		<p class="sender">GitHub</p>
 	</div>
 {% endblock mainpanel %}

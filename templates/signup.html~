@@ -7,7 +7,7 @@
 	<div style="height: 10px;"></div>
 	<div class="mobile">
 		<div class="center">
-			<p><button href="/get_involved/signup" class="blink btn btn-aqua btn-large btn-block">Sign Up</button></p>
+			<p><a href="/get_involved/signup" class="btn btn-aqua btn-large btn-block">Sign Up</a></p>
 		</div>
 		<div style="height: 30px;"></div>
 	</div>
@@ -242,7 +242,7 @@
 {% endblock mainpanel %}
 
 {% block sidebar %}
-	<p class="desktop"><button href="/get_involved/signup" class="blink btn btn-aqua btn-large btn-block">Sign Up</button></p>
+	<p class="bigscreens"><a href="/get_involved/signup" class="btn btn-aqua btn-large btn-block">Sign Up</a></p>
 	<div class="space"></div>
 	<h4 class="connected">Meet Up</h4>
 	<div class="well" id="orient">
@@ -254,7 +254,7 @@
 	<h4 class="connected">Show Up</h4>
 	<div class="well">
 		{% for dojo in dojos %}
-			<button class="blink btn btn-success btn-block" href="{{dojo.zenid}}">{{dojo.location}}</button>
+			<a target="blank" class="btn btn-success btn-block" href="{{dojo.zenid}}">{{dojo.location}}</a>
 		{% endfor %}
 	</div>
 	<img id="dojomojo" src="{{url_for('static', filename='dojomojo.png')}}"/>

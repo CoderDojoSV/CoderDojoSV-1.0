@@ -25,6 +25,7 @@
 					collapsible: true,
 					heightStyle: "content"
 				});
+				$()
 				//setInterval(function() {
 				//	$("#cylonNinja").animate({"right": "50%"}, 0);
 				//	$("#cylonNinja").animate({"right": "-=100"}, 0);
@@ -147,6 +148,7 @@
 				$(".blink").click(function() {
 					location = $(this).attr("href");
 				});
+				$(".nojs").hide();
 			});
 		</script>
 		<style>
@@ -168,6 +170,11 @@
 		<div class="alert alert-square onlyie">
 			<strong>Warning!</strong> Because you are using Internet Explorer, some features might not work on this website. Please try another browser, such as <a href="http://www.google.com/chrome">Google Chrome</a> or <a href="http://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox.</a>
 			<button type="button" class="close alert-fixed-top pull-right" data-dismiss="alert">&times;</button>
+		</div>
+		<div class="nojs">
+			<div class="alert alert-square">
+				<strong>Attention!</strong> Your JavaScript is turned off, and this site depends on it. Please turn it back on.
+			</div>
 		</div>
 		<div id="logocon" oncontextmenu="return false;">
 			<div class="containery">
@@ -221,6 +228,7 @@
 		
 		{% block body %}
 		{% endblock body %}
+		<br/>
 		<div id="fc">
 			<div id="footer">
 				<div id="footer-inner">

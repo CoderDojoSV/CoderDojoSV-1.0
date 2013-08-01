@@ -29,6 +29,7 @@
 				}, 2000);
 			}, 1500);
 			$("#loading").fadeOut(1000);
+			$("#lt").text("Loading...");
 			setTimeout(function() {
 				$("#frontCarousel").fadeIn("slow");
 			}, 1000);
@@ -39,16 +40,16 @@
 {% block left %}
 	<h3>Kids Learn to Code!</h3>
 	<p>CoderDojo Silicon Valley teaches programming languages to youth, ages 7-17, at independently run dojos in <a href="/dojos/San%20Francisco">San Francisco</a>, <a href="/dojos/Mountain%20View">Mountain View</a>, and <a href="/dojos/San%20Jose">San Jose</a>, California.</p>
-	<p>CoderDojo Silicon Valley is a Bay Area instance of <a href="http://www.coderdojo.com">CoderDojo</a>, a global collaboration of <em>free</em> and open programing clubs run by enthusiastic volunteers. At CoderDojos around the world, young people, along with parents and mentors, learn how to code, develop websites, make apps, program games and more!</p>
+	<p>CoderDojo Silicon Valley is a Bay Area instance of <a href="http://www.coderdojo.com" target="_blank">CoderDojo</a>, a global collaboration of <em>free</em> and open programing clubs run by enthusiastic volunteers. At CoderDojos around the world, young people, along with parents and mentors, learn how to code, develop websites, make apps, program games and more!</p>
 	<!--<h4>All CoderDojos are <em>free</em> to attend!</h4>-->
 	<div class="row-fluid nobg">
 		<div class="span6">
 			<h4>Want Sessions?</h4>
-			<button class="blink btn btn-large btn-success btn-block" href="/dojos">Find Dojos</button>
+			<a class="btn btn-large btn-success btn-block" href="/dojos">Find Dojos</a>
 		</div>
 		<div class="span6">
 			<h4>We Need Mentors!</h4>
-			<button class="blink btn btn-large btn-success btn-block" href="/get_involved">Get Involved</button>
+			<a class="btn btn-large btn-success btn-block" href="/get_involved">Get Involved</a>
 		</div>
 	</div>
 	<!--<h4>More Resources</h4>
@@ -61,7 +62,7 @@
 		<div id="loading" style="display: table; height: 354px; width: 531px; #position: relative; overflow: hidden;">
 			<div style="#position: absolute; #top: 50%; display: table-cell; vertical-align: middle;">
 				<div id="contents" style="#position: relative; #top: -50%">
-					<h1>Loading...</h1>
+					<h1 id="lt">No Javascript...</h1>
 				</div>
 			</div>
 		</div>
