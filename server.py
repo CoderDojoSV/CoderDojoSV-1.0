@@ -191,12 +191,12 @@ dojolist[0].time = "<a href='" + dojolist[0].zenid + "'>" + dojolist[0].time + "
 dojolist.append(Dojo("Mountain View", "Microsoft", "7:00-8:30 p.m.", "1st and 2nd Wednesdays", "http://zen.coderdojo.com/dojo/159", "40", "August 2012", "siliconvalleycoderdojo", "disabled", "SVCoderDojo", "siliconvalley@coderdojo.com"))
 dojolist.append(Dojo("San Jose", "The Irish Innovation Center", "TBD", "TBD", "http://zen.coderdojo.com/dojo/138", "25", "June 2013", "san-jose-coderdojo", "disabled", "SVCoderDojo", "siliconvalley@coderdojo.com"))
 
-supporters.append(Supporter("/static/Microsoft-Logo.png", "Microsoft", "http://microsoft.com", "Providing space for Mountain View CoderDojo", "micro"))
+supporters.append(Supporter("/static/Microsoft-Logo.png", "Microsoft", "http://microsoft.com", "Provides space for Mountain View CoderDojo", "micro"))
 supporters.append(Supporter("/static/boutmentors.png", "Breakout Mentors", "http://breakoutmentors.com", "Founder is lead technology champion of CoderDojo Silicon Valley", "bkm"))
-supporters.append(Supporter("/static/GitHub-Logo.png", "GitHub", "http://github.com", "Providing space for San Fransisco CoderDojo", "gh"))
-supporters.append(Supporter("/static/Symantec_logo.png", "Symantec", "http://symantec.com", "Providing pizza for Mountain View CoderDojo", "syn"))
-supporters.append(Supporter("/static/iic.png", "Irish Innovation Center", "http://svgpartners.com/", "Providing space for San Jose CoderDojo", "iic"))
-supporters.append(Supporter("/static/mountainmikes.png", "Mountain Mike's Pizza", "http://mountainmikes.com", "Mountain View CoderDojo discounted pizza offers", "mm"))
+supporters.append(Supporter("/static/GitHub-Logo.png", "GitHub", "http://github.com", "Provides space for San Fransisco CoderDojo", "gh"))
+supporters.append(Supporter("/static/Symantec_logo.png", "Symantec", "http://symantec.com", "Provides pizza for Mountain View CoderDojo", "syn"))
+supporters.append(Supporter("/static/iic.png", "Irish Innovation Center", "http://svgpartners.com/", "Provides space for San Jose CoderDojo", "iic"))
+supporters.append(Supporter("/static/mountainmikes.png", "Mountain Mike's Pizza", "http://mountainmikes.com", "Mountain View CoderDojo discount pizza offers", "mm"))
 	
 topbar.append(TopBarLink("", "Home"))
 topbar.append(TopBarLink("dojos", "Dojos"))
