@@ -31,7 +31,7 @@
 							{% if dojo.git == "disabled" %}
 								<button class="disabled btn btn-success btn-block">{{dojo.location}}</button>
 							{% else %}
-								<a class="btn btn-success btn-block" href="{{dojo.git}}">{{dojo.location}}</a>
+								<a class="btn btn-success btn-block" target="_blank" href="{{dojo.git}}">{{dojo.location}}</a>
 							{% endif %}
 						</div>
 					{% endfor %}

@@ -8,7 +8,7 @@
 	<img class="cam" src="{{url_for('static', filename='montage.png')}}"/>
 	<div class="space"></div>
 	<h3>Can anyone start a CoderDojo</h3>
-	<p>Absolutely! Become a Champion and change the world! <a target="_blank" href="http://coderdojo.com/help-us/i-want-to-start-a-coderdojo-right-now/">Read more about starting your own dojo.</a></p>
+	<p>Absolutely! Become a Champion and change the world! <a href="http://coderdojo.com/help-us/i-want-to-start-a-coderdojo-right-now/">Read more about starting your own dojo.</a></p>
 	<p>If you really want to give it a go, don’t do it alone. Ask us, and we’ll be happy to tell you all about our local start up process and specific lessons learned. <a href="mailto:siliconvalley@coderdojo.com">Contact Us</a>, if you have any questions.</p>
 	<p>Did you know, there are hundreds of CoderDojos around the world! See a <a target="_blank" href="http://zen.coderdojo.com/dojo">complete list</a> of all international CoderDojos.</p>
 {% endblock mainpanel %}

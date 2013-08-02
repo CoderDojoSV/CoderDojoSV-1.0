@@ -172,7 +172,7 @@
 			<button type="button" class="close alert-fixed-top pull-right" data-dismiss="alert">&times;</button>
 		</div>
 		<div class="nojs">
-			<div class="alert alert-square">
+			<div class="alert alert-error alert-square">
 				<strong>Attention!</strong> Your JavaScript is turned off, and this site depends on it. Please turn it back on.
 			</div>
 		</div>

@@ -7,7 +7,7 @@
 	<p>To be a mentor or lead a session, {% if dojo.location == "San Francisco" %}<a href="mailto:sanfran@coderdojo.com?subject=Mentor%20Participation">email us</a> and tell us more about you.{% else %}<a href="/get_involved/signup">Sign Up</a> and tell us more about you.{% endif %}</p>
 	<div class="space"></div>
 	<div class="center mobile">
-		<p><a target="_blank" class="btn btn-aqua btn-large btn-block" href="{{dojo.zenid}}">Attend next event</button></p>
+		<p><a target="_blank" class="btn btn-aqua btn-large btn-block" href="{{dojo.zenid}}">Attend next event</a></p>
 	</div>
 	<div class="space"></div>
 	<img class="cam" src="{% block picture %}{% endblock picture %}"/>
@@ -19,7 +19,7 @@
 		<div class="well">
 			<p><b>Location:</b> {{dojo.company}}, {{dojo.location}}</p>
 			<p><b>Capacity:</b> {{dojo.cap}}</p>
-			<p><b>Twitter:</b> <a href="http://twitter.com/{{dojo.twitter}}">@{{dojo.twitter}}</a></p>
+			<p><b>Twitter:</b> <a target="_blank" href="http://twitter.com/{{dojo.twitter}}">@{{dojo.twitter}}</a></p>
 			<p><b>Email:</b> <a href="mailto:{{dojo.email}}">{{dojo.email}}</a></p>
 			<p><b>Founded:</b> {{dojo.start}}</p>
 		</div>
