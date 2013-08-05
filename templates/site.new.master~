@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE htmlfour>
 <html>
 	<head>
 		<title>CoderDojo Silicon Valley</title>
@@ -101,6 +101,10 @@
 						var w = 720;
 						var h = 490;
 					}
+					if ($(window).width() < 920) {
+						var w = $(window).width();
+						var h = $(window).height();
+					}
 					$(id).dialog({
 						modal: true,
 						width: w,
@@ -171,11 +175,13 @@
 			<strong>Warning!</strong> Because you are using Internet Explorer, some features might not work on this website. Please try another browser, such as <a href="http://www.google.com/chrome">Google Chrome</a> or <a href="http://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox.</a>
 			<button type="button" class="close alert-fixed-top pull-right" data-dismiss="alert">&times;</button>
 		</div>
-		<div class="nojs">
-			<div class="alert alert-error alert-square">
-				<strong>Attention!</strong> Your JavaScript is turned off, and this site depends on it. Please turn it back on.
+		<noscript>
+			<div class="nojs">
+				<div class="alert alert-error alert-square">
+					<strong>Attention!</strong> Your JavaScript is turned off, and this site depends on it. Please turn it back on.
+				</div>
 			</div>
-		</div>
+		</noscript>
 		<div id="logocon" oncontextmenu="return false;">
 			<div class="containery">
 				<div class="row-fluid nobg" style="box-shadow: none;">

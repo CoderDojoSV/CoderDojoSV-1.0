@@ -34,17 +34,18 @@
 	.homebox {
 		margin-bottom: 0px;
 	}
-}
-
-@media (max-width: 767px) {
 	#cylonNinja {
 		display: none;
 	}
+}
+
+@media (max-width: 767px) {
 	.connected ~ .well {
 		margin: 0 auto;
 		max-width: 300px;
 		margin-bottom: 20px;
 	}
+	
 	.spanright {
 		padding-top: 0!important;
 	}
@@ -57,13 +58,18 @@
 	}	
 	.spanright {
 		padding-left: 40px !important;
-		padding-right: 20px !important;
+		padding-right: 40px !important;
 	}
 	.spanleft {
-		padding-right: 20px !important;
+		padding-right: 40px !important;
 	}
 	#mainpic {
-		width: 75%!important;
+		width: auto;
+		height: 354px;
+	}
+	.print {
+		width: 100%;
+		height: 100%;
 	}
 	.mobile {
 		display: inline!important;
@@ -138,7 +144,7 @@
 .icons {
 	margin-top: 15px;
 	margin-bottom: 12px;
-	font-size: 40pt;
+	font-size: 30pt;
 }
 
 .entypo-facebook-squared {
@@ -627,7 +633,7 @@ div a {
 	border-top-right-radius: 5px;
 	margin-bottom: -2px;
 	padding-bottom: 2px;
-	z-index: 1;
+	z-index: 1000;
 	text-align: center;
 }
 

@@ -101,6 +101,10 @@
 						var w = 720;
 						var h = 490;
 					}
+					if ($(window).width() < 920) {
+						var w = $(window).width();
+						var h = $(window).height();
+					}
 					$(id).dialog({
 						modal: true,
 						width: w,
