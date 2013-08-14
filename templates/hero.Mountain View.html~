@@ -29,14 +29,14 @@
 	<img class="item" src="/static/Sensei/brian.png" title="Brian S."/>
 	<img class="item" src="/static/Sensei/Sensei.png" title="John Z."/>
 	<img class="item" src="/static/Sensei/steven!.png" title="Steven! R."/>
-	<img class="item" src="/static/Sensei/Sensei.png" title="Ynaiv A."/>
+	<img class="item" src="/static/Sensei/Sensei.png" title="Yaniv A."/>
 	<img class="item" src="/static/Sensei/Sensei.png" title="Kevin E."/>
 	<img class="item" src="/static/Sensei/Sensei.png" title="Irwin C."/>
 	<img class="item" src="/static/Sensei/Sensei.png" title="Jeeyun L."/>
 {% endblock mentors %}
 {% block contributors %}
 	<div class="item">
-		<img class="content" src="/static/Sensei/Sensei.png"/>
+		<img class="content" src="/static/Sensei/mai.png"/>
 		<div class="caption">
 			Mai N.
 			<br><span class="sender">Graphics Consultant</span>

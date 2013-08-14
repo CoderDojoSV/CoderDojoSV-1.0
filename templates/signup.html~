@@ -254,7 +254,7 @@
 	<h4 class="connected">Show Up</h4>
 	<div class="well">
 		{% for dojo in dojos %}
-			<a target="blank" class="btn btn-success btn-block" href="{{dojo.zenid}}">{{dojo.location}}</a>
+			<a target="_blank" class="btn btn-success btn-block" href="{{dojo.zenid}}">{{dojo.location}}</a>
 		{% endfor %}
 	</div>
 	<img id="dojomojo" src="{{url_for('static', filename='dojomojo.png')}}"/>
