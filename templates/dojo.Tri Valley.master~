@@ -1,0 +1,12 @@
+{% extends "dojo.new.master" %}
+
+{% block blurb %}
+	<p>Always looking for mentors of any age to <a href="/get_involved">get involved</a> and share their knowledge.</p>
+	<p>We can also give community service credits, just ask us.</p>
+{% endblock blurb %}
+
+{% block picture %} {{url_for('static', filename='mvmontage.png')}} {% endblock picture %}
+
+{% block moreinfo %}
+	<p>Blurb Blurb Blurb.</p>
+{% endblock moreinfo %}

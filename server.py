@@ -33,8 +33,7 @@ class Dojo(object):
 		self.start       = started
 		self.googlegroup = group
 		self.git         = git
-		splitted         = self.location.split(" ")
-		self.acronym     = splitted[0][0] + splitted[1][0]
+		self.acronym     = "UNUSED_DATA" #= splitted[0][0] + splitted[1][0]
 		self.twitter = twitter
 		self.email = e
 
@@ -189,9 +188,11 @@ def badges():
 dojolist.append(Dojo("San Francisco", "GitHub", "check here for details", "Times and dates vary", "http://zen.coderdojo.com/dojo/25", "40", "February 2012", "coderdojo-sanfran", "http://www.github.com/CoderDojoSF", "CoderDojoSF", "sanfran@coderdojo.com"))
 dojolist[0].time = "<a target='_blank' href='" + dojolist[0].zenid + "'>" + dojolist[0].time + "</a>"
 
-dojolist.append(Dojo("Mountain View", "Microsoft", "check back soon!", "Taking a break for August", "http://zen.coderdojo.com/dojo/159", "40", "August 2012", "siliconvalleycoderdojo", "disabled", "SVCoderDojo", "siliconvalley@coderdojo.com"))
+dojolist.append(Dojo("Mountain View", "Microsoft", "7:00-8:30 pm", "Third Wednesday of every month", "http://zen.coderdojo.com/dojo/159", "40", "August 2012", "siliconvalleycoderdojo", "disabled", "SVCoderDojo", "siliconvalley@coderdojo.com"))
 
-dojolist.append(Dojo("San Jose", "The Irish Innovation Center", "TBD", "TBD", "http://zen.coderdojo.com/dojo/138", "25", "June 2013", "san-jose-coderdojo", "disabled", "SVCoderDojo", "siliconvalley@coderdojo.com"))
+dojolist.append(Dojo("Tri-Valley", "Dublin Library", "7:00-8:30 pm", "First Wednesday of every month", "http://zen.coderdojo.com/dojo/428", "40", "October 2013", "trivalleycoderdojo", "disabled", "TrivCoderDojo", "trivalleycoderdojo@gmail.com"))
+
+dojolist.append(Dojo("San Jose", "The Irish Innovation Center", "TBD", "TBD", "http://zen.coderdojo.com/dojo/138", "25", "June 2013", "san-jose-coderdojo", "disabled", "SJCoderDojo", "siliconvalley@coderdojo.com"))
 
 supporters.append(Supporter("/static/Microsoft-Logo.png", "Microsoft", "http://microsoft.com", "Provides space for Mountain View CoderDojo", "micro"))
 supporters.append(Supporter("/static/boutmentors.png", "Breakout Mentors", "http://breakoutmentors.com", "Founder is lead technology champion of CoderDojo Silicon Valley", "bkm"))

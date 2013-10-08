@@ -1,0 +1,11 @@
+{% extends "dojo.new.master" %}
+
+{% block blurb %}
+	<p>Hosted by the City of Dublin and the Dublin Library</p>
+{% endblock blurb %}
+
+{% block picture %} {{url_for('static', filename='dublinlibrary.jpeg')}} {% endblock picture %}
+
+{% block moreinfo %}
+	<p>Blurb Blurb Blurb.</p>
+{% endblock moreinfo %}

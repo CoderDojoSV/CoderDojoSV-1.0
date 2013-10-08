@@ -2,7 +2,7 @@
 {% block body %}
 	<div class="containery">
 		<div class="row-fluid">
-			
+			{% block subcontent %}{% endblock subcontent %}
 			<div class="span5 side spanleft">
 				{% block left %}{% endblock left %}
 			</div>

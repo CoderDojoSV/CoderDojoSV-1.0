@@ -3,8 +3,8 @@
 {% block mainpanel %}
 	<p><b>Session Schedule:</b> {{dojo.days}}, {{dojo.time}}</p>
 	<div class="space"></div>
-	<p>Join the <a target="_blank" href="http://groups.google.com/forum/#!forum/{{dojo.googlegroup}}">local Google Group</a> to get event announcements for CoderDojo {{dojo.acronym}}.</p>
-	<p>To be a mentor or lead a session, {% if dojo.location == "San Francisco" %}<a href="mailto:sanfran@coderdojo.com?subject=Mentor%20Participation">email us</a> and tell us more about you.{% else %}<a href="/get_involved/signup">Sign Up</a> and tell us more about you.{% endif %}</p>
+	<p>Join the <a target="_blank" href="http://groups.google.com/forum/#!forum/{{dojo.googlegroup}}">local Google Group</a> to get event announcements for CoderDojo {{dojo.location}}.</p>
+	<p>To be a mentor or lead a session, {% if dojo.location == "San Francisco" %}<a href="mailto:sanfran@coderdojo.com?subject=Mentor%20Participation">email us</a>{% endif %}{% if dojo.location == "Tri Valley" %}<a href="http://eepurl.com/EO5sr">Sign Up</a>{% else %}<a href="/get_involved/signup">Sign Up</a>{% endif %} and tell us more about you.</p>
 	<div class="space"></div>
 	<div class="center mobile">
 		<p><a target="_blank" class="btn btn-aqua btn-large btn-block" href="{{dojo.zenid}}">Attend next event</a></p>
