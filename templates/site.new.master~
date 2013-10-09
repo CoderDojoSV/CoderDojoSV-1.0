@@ -223,7 +223,7 @@
 									<li><a href="/dojos/Mountain%20View">
 										Mountain View
 									</a></li>
-									<li><a href="/dojos/Tri%20Valley">
+									<li><a href="/dojos/Tri-Valley">
 										Tri Valley
 									</a></li>
 									<li><a href="/dojos/San%20Jose">
@@ -234,7 +234,7 @@
 							<li><a href="/get_involved">Get Involved</a></li>
 							<li><a href="/sponsors">Sponsors</a></li>
 							<li><a href="/resources">Resources</a></li>
-							<li><a href="/calendar">Calendar</a></li>
+							<!--<li><a href="/calendar">Calendar</a></li>-->
 						</ul>
 					</div><!-- /.nav-collapse -->
 				</div>
@@ -255,7 +255,7 @@
 		<!--[if IE]>
 			<script>document.documentElement.className+='ie';</script>
 		<![endif]-->
-		<script>if(Function('/*@cc_on return document.documentMode===10@*/')()){document.documentElement.className+='ie';}</script>
+		<!--<script>if(Function('/*@cc_on return document.documentMode===10@*/')()){document.documentElement.className+='ie';}</script>-->
 		
 		{% block body %}
 		{% endblock body %}
