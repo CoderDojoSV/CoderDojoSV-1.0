@@ -17,7 +17,7 @@
 	<h3>Additional Info</h3>
 		{% block blurb %}{% endblock blurb %}
 		<div class="well">
-			<p><b>Location:</b> {{dojo.company}}, {{dojo.location}}</p>
+			<p><b>Location:</b> {% block location %}{% endblock location %}</p>
 			<p><b>Capacity:</b> {{dojo.cap}}</p>
 			<p><b>Twitter:</b> <a target="_blank" href="http://twitter.com/{{dojo.twitter}}">@{{dojo.twitter}}</a></p>
 			<p><b>Email:</b> <a href="mailto:{{dojo.email}}">{{dojo.email}}</a></p>

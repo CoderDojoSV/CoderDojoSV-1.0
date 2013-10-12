@@ -224,7 +224,7 @@
 										Mountain View
 									</a></li>
 									<li><a href="/dojos/Tri-Valley">
-										Tri Valley
+										Tri-Valley
 									</a></li>
 									<li><a href="/dojos/San%20Jose">
 										San Jose
@@ -242,7 +242,7 @@
 		</div><!-- /navbar -->
 		<div class="dropdown">
 			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" id="copier">
-				<li role="presentation" class="disabled black">Brushed metal texture by myfreetextures.com</li>
+				<li role="presentation" class="disabled black">Top bar texture by myfreetextures.com</li>
 				<li role="presentation"><a href="#" id="closedev">Close</a></li>
 			</ul>
 		</div>

@@ -432,6 +432,14 @@ h3, h4 {
 	max-width: 100%;
 }
 
+a#dublin img {
+	height: 95px!important;
+}
+
+table .supporter#dublin {
+	height: 120px!important;
+}
+
 .homebox .ay {
 	text-align: center;
 }

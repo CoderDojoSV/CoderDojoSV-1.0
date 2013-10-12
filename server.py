@@ -195,9 +195,12 @@ dojolist.append(Dojo("Tri-Valley", "Dublin Library", "7:00-8:30 pm", "First Wedn
 dojolist.append(Dojo("San Jose", "The Irish Innovation Center", "TBD", "TBD", "http://zen.coderdojo.com/dojo/138", "25", "June 2013", "san-jose-coderdojo", "disabled", "SJCoderDojo", "siliconvalley@coderdojo.com"))
 
 supporters.append(Supporter("/static/Microsoft-Logo.png", "Microsoft", "http://microsoft.com", "Provides space for Mountain View CoderDojo", "micro"))
-supporters.append(Supporter("/static/boutmentors.png", "Breakout Mentors", "http://breakoutmentors.com", "Founder is lead technology champion of CoderDojo Silicon Valley", "bkm"))
+supporters.append(Supporter("/static/boutmentors.png", "Breakout Mentors", "http://breakoutmentors.com", "Founder is lead technology champion of CoderDojo Mountain View", "bkm"))
+
+supporters.append(Supporter("/static/dublinLogo.png", "The City of Dublin", "http://dublinca.gov", "Provides space for Tri-Valley CoderDojo at the Dublin Library", "dublin"))
+
 supporters.append(Supporter("/static/GitHub-Logo.png", "GitHub", "http://github.com", "Provides space for San Fransisco CoderDojo", "gh"))
-supporters.append(Supporter("/static/Symantec_logo.png", "Symantec", "http://symantec.com", "Provides pizza for Mountain View CoderDojo", "syn"))
+supporters.append(Supporter("/static/Symantec_logo.png", "Symantec", "http://symantec.com", "Provides refreshments for Mountain View CoderDojo", "syn"))
 supporters.append(Supporter("/static/iic.png", "Irish Innovation Center", "http://svgpartners.com/", "Provides space for San Jose CoderDojo", "iic"))
 supporters.append(Supporter("/static/mountainmikes.png", "Mountain Mike's Pizza", "http://mountainmikes.com", "Mountain View CoderDojo discount pizza offers", "mm"))
 	

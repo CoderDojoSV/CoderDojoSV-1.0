@@ -10,7 +10,7 @@
 				<table border="1">
 					{% for supporter in sups %}
 					<tr>
-						<td class="aligncenter"><a href="{{supporter.link}}"><img class="supporter" alt="{{supporter.alt}}" src="{{supporter.img}}"/></a></td>
+						<td class="aligncenter"><a href="{{supporter.link}}"><img class="supporter" alt="{{supporter.alt}}" id="{{supporter.hashtag}}" src="{{supporter.img}}"/></a></td>
 						<td><p class="aligncenter">{{supporter.job}}</p></td>
 					</tr>
 					{% endfor %}
