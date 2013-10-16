@@ -179,11 +179,11 @@ def press():
 @app.route("/resources/")
 def resources():
 	return render_template("resources.html", topbar=topbar, dojos=dojolist)
-	
-@app.route("/badges")
-@app.route("/badges/")
-def badges():
-	return render_template("badges.html", topbar=topbar)
+
+@app.route("/calendar")
+@app.route("/calendar/")
+def calendar():
+	return render_template("cal.html", topbar=topbar)
 
 dojolist.append(Dojo("San Francisco", "GitHub", "check here for details", "Times and dates vary", "http://zen.coderdojo.com/dojo/25", "40", "February 2012", "coderdojo-sanfran", "http://www.github.com/CoderDojoSF", "CoderDojoSF", "sanfran@coderdojo.com"))
 dojolist[0].time = "<a target='_blank' href='" + dojolist[0].zenid + "'>" + dojolist[0].time + "</a>"
