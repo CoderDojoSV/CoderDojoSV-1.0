@@ -160,6 +160,11 @@ def heroes(name):
 			return render_template("comingsoon.html", topbar=topbar, dojo=name)
 		else:
 			return render_template("cantfind.html", topbar=topbar, dojo=name)
+
+@app.route("/dojos/<name>/gallery")
+@app.route("/dojos/<name>/gallery/")
+def gallery(name):
+	return render_template("gallery." + name + ".html", topbar=topbar, dojo=name)
 		
 @app.route("/bootstrap")
 def btest():
@@ -185,14 +190,14 @@ def resources():
 def calendar():
 	return render_template("cal.html", topbar=topbar)
 
+dojolist.append(Dojo("Mountain View", "Microsoft", "7:00-8:30 pm", "Third Wednesday of every month", "http://zen.coderdojo.com/dojo/159", "40", "August 2012", "siliconvalleycoderdojo", "disabled", "SVCoderDojo", "siliconvalley@coderdojo.com"))
+
+dojolist.append(Dojo("South Bay", "On-Site.com", "6:30-8:00 pm, dates TBD", "Tuesdays", "http://zen.coderdojo.com/dojo/524", "30", "October 2013", "siliconvalleycoderdojo", "disabled", "SVCoderDojo", "siliconvalley@coderdojo.com"))
+
 dojolist.append(Dojo("San Francisco", "GitHub", "check here for details", "Times and dates vary", "http://zen.coderdojo.com/dojo/25", "40", "February 2012", "coderdojo-sanfran", "http://www.github.com/CoderDojoSF", "CoderDojoSF", "sanfran@coderdojo.com"))
 dojolist[0].time = "<a target='_blank' href='" + dojolist[0].zenid + "'>" + dojolist[0].time + "</a>"
 
-dojolist.append(Dojo("Mountain View", "Microsoft", "7:00-8:30 pm", "Third Wednesday of every month", "http://zen.coderdojo.com/dojo/159", "40", "August 2012", "siliconvalleycoderdojo", "disabled", "SVCoderDojo", "siliconvalley@coderdojo.com"))
-
 dojolist.append(Dojo("Tri-Valley", "Dublin Library", "7:00-8:30 pm", "First Wednesday of every month", "http://zen.coderdojo.com/dojo/428", "40", "October 2013", "trivalleycoderdojo", "disabled", "TrivCoderDojo", "trivalleycoderdojo@gmail.com"))
-
-dojolist.append(Dojo("San Jose", "The Irish Innovation Center", "TBD", "TBD", "http://zen.coderdojo.com/dojo/138", "25", "June 2013", "san-jose-coderdojo", "disabled", "SJCoderDojo", "siliconvalley@coderdojo.com"))
 
 supporters.append(Supporter("/static/Microsoft-Logo.png", "Microsoft", "http://microsoft.com", "Provides space for Mountain View CoderDojo", "micro"))
 supporters.append(Supporter("/static/boutmentors.png", "Breakout Mentors", "http://breakoutmentors.com", "Founder is lead technology champion of CoderDojo Mountain View", "bkm"))
@@ -201,7 +206,7 @@ supporters.append(Supporter("/static/dublinLogo.png", "The City of Dublin", "htt
 
 supporters.append(Supporter("/static/GitHub-Logo.png", "GitHub", "http://github.com", "Provides space for San Fransisco CoderDojo", "gh"))
 supporters.append(Supporter("/static/Symantec_logo.png", "Symantec", "http://symantec.com", "Provides refreshments for Mountain View CoderDojo", "syn"))
-supporters.append(Supporter("/static/iic.png", "Irish Innovation Center", "http://svgpartners.com/", "Provides space for San Jose CoderDojo", "iic"))
+supporters.append(Supporter("/static/OnSite_logo.png", "On-Site", "http://on-site.com/", "Provides space and refreshments for South Bay CoderDojo", "os"))
 supporters.append(Supporter("/static/mountainmikes.png", "Mountain Mike's Pizza", "http://mountainmikes.com", "Mountain View CoderDojo discount pizza offers", "mm"))
 	
 topbar.append(TopBarLink("", "Home"))

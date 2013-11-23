@@ -1,5 +1,5 @@
 {% extends "dojopage.new.master" %}
-{% block title %}{{dojo.location}} CoderDojo{% endblock title %}
+{% block title %}{{dojo.location}}{% endblock title %}
 {% block mainpanel %}
 	<p><b>Session Schedule:</b> {{dojo.days}}, {{dojo.time}}</p>
 	<div class="space"></div>
@@ -35,7 +35,11 @@
 			{% else %}
 				<p><a target="_blank" class="btn btn-block btn-success" href="{{dojo.git}}">Past Projects</a></p>
 			{% endif %}
-			<p><button class="btn disabled btn-block btn-success" disabled>Photo Gallery</button></p>
+			{% if dojo.location == "Tri-Valley" %}
+				<p><a class="btn btn-block btn-success" href="/dojos/{{dojo.location}}/gallery">Photo Gallery</a></p>
+			{% else %}
+				<p><button class="btn disabled btn-block btn-success" disabled>Photo Gallery</button></p>
+			{% endif %}
 			{% if hasheroes == "true" %}
 				<p><a target="_blank" class="btn btn-block btn-success" href="/dojos/{{dojo.location}}/heroes">Dojo Heroes</a></p>
 			{% else %}

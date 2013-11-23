@@ -1,0 +1,179 @@
+{% extends "site.new.master" %}
+{% block extras %}
+	<script src="{{url_for('static', filename='galleryModule/mp.js')}}"></script>
+	<link rel="stylesheet" href="{{url_for('static', filename='galleryModule/mp.css')}}"/>
+	<link rel="stylesheet" href="{{url_for('static', filename='galleryModule/photos.css')}}"/>
+	<script>
+		$(function() {
+			$('a.imgl').magnificPopup({
+				type: 'image',
+				tLoading: 'Loading image...',
+				mainClass: 'mfp-img-mobile',
+				gallery: {
+					enabled: true,
+					navigateByImgClick: true
+				},
+				image: {
+					tError: '<a href="%url%">The image</a> could not be loaded. Check your Internet connection.',
+				}
+			});
+		});
+		$(window).load(function() {
+			setTimeout(function() {
+				$(".l").hide();
+				if ($(window).width() < 720) {
+					$("#cd1").click();
+				}
+				$("#tiles").show();
+			}, 20);
+		});
+	</script>
+{% endblock extras %}
+{% block body %}
+	<div class="containery">
+		<div class="row-fluid">
+			<div class="span12 side">
+				<h3>Tri-Valley Photo Gallery</h3>
+			    <div class="progress l progress-success progress-striped active">
+					<div class="bar" style="width: 100%;"></div>
+				</div>
+				<p style="color: gray;" class="l">Loading...</p>
+				<table id="tiles" style="display: none;">
+					<tr>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" id="cd1" href="{{url_for('static', filename='TVPics/CD27.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD27.jpg')}}"/></a>
+							</div>
+						</td>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD4.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD4.jpg')}}"/></a>
+							</div>
+						</td>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD3.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD3.jpg')}}"/></a>
+							</div>
+						</td>
+					
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD1.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD1.jpg')}}"/></a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD5.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD5.jpg')}}"/></a>
+							</div>
+						</td>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD6.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD6.jpg')}}"/></a>
+							</div>
+						</td>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD7.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD7.jpg')}}"/></a>
+							</div>
+						</td>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD8.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD8.jpg')}}"/></a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD9.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD9.jpg')}}"/></a>
+							</div>
+						</td>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD10.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD10.jpg')}}"/></a>
+							</div>
+						</td>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD11.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD11.jpg')}}"/></a>
+							</div>
+						</td>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD12.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD12.jpg')}}"/></a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD13.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD13.jpg')}}"/></a>
+							</div>
+						</td>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD14.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD14.jpg')}}"/></a>
+							</div>
+						</td>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD15.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD15.jpg')}}"/></a>
+							</div>
+						</td>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD16.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD16.jpg')}}"/></a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD17.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD17.jpg')}}"/></a>
+							</div>
+						</td>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD19.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD19.jpg')}}"/></a>
+							</div>
+						</td>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD20.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD20.jpg')}}"/></a>
+							</div>
+						</td>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD22.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD22.jpg')}}"/></a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD23.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD23.jpg')}}"/></a>
+							</div>
+						</td>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD25.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD25.jpg')}}"/></a>
+							</div>
+						</td>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD26.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD26.jpg')}}"/></a>
+							</div>
+						</td>
+						<td>
+							<div class="imageDiv">
+								<a class="imgl" href="{{url_for('static', filename='TVPics/CD2.jpg')}}"><img src="{{url_for('static', filename='TVPics/CD2.jpg')}}"/></a>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+{% endblock body %}

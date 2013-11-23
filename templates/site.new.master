@@ -217,17 +217,18 @@
 										All
 									</a></li>
 									<li class="divider"></li>
-									<li><a href="/dojos/San%20Francisco">
-										San Francisco
-									</a></li>
 									<li><a href="/dojos/Mountain%20View">
 										Mountain View
 									</a></li>
+									<li><a href="/dojos/South%20Bay">
+										South Bay/Campbell
+									</a></li>
+									<li class="divider"></li>
+									<li><a href="/dojos/San%20Francisco">
+										San Francisco
+									</a></li>
 									<li><a href="/dojos/Tri-Valley">
 										Tri-Valley
-									</a></li>
-									<li><a href="/dojos/San%20Jose">
-										San Jose
 									</a></li>
 								</ul>
 							</li>
@@ -246,12 +247,12 @@
 				<li role="presentation"><a href="#" id="closedev">Close</a></li>
 			</ul>
 		</div>
-		<div class="dialog" id="vo" title="Join Us!">
+		<!--<div class="dialog" id="vo" title="Join Us!">
 			<p>Calling all mentors, presenters and those interested in planning the 2013/14 sessions for Mountain View or San Jose!</p>
 			<p>Come to our orientation at the Irish Innovation Center in Downtown San Jose</p>
 			<p>7:00-8:30 p.m on Thursday, August 22nd, 2013</p>
 			<p>RSVP to <a href="mailto:tiffanyTOverbo@gmail.com?subject=RSVP%20Volunteer%20Orientation">Tiffany Overbo</a></p>
-		</div>
+		</div>-->
 		<!--[if IE]>
 			<script>document.documentElement.className+='ie';</script>
 		<![endif]-->
