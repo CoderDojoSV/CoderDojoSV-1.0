@@ -3,18 +3,56 @@
 	<div class="containery">
 		<div class="row-fluid">
 			<div class="span12 side">
-				<h3>Sponsors</h3>
-				<p>Local dojos are kindly supported by the following businesses.</p>
-				<!--<p>If you or your company can provide food, mentors, prizes, laptops, Rasberry Pis, Arduinos, or any amazing stuff please see the local dojo wish list.</p>-->
+				<h3>Regional Sponsors</h3>
+				<p>Local dojos are kindly supported by the following businesses:</p>
 				<div class="space"></div>
+				<div class="well"><h4>Mountain View</h4>
 				<table border="1">
 					{% for supporter in sups %}
-					<tr>
-						<td class="aligncenter"><a href="{{supporter.link}}"><img class="supporter" alt="{{supporter.alt}}" id="{{supporter.hashtag}}" src="{{supporter.img}}"/></a></td>
-						<td><p class="aligncenter">{{supporter.job}}</p></td>
-					</tr>
+						{% if supporter.dojo == 'mv' %}
+							<tr>
+								<td class="aligncenter"><a href="{{supporter.link}}"><img class="supporter" alt="{{supporter.alt}}" id="{{supporter.hashtag}}" src="{{supporter.img}}"/></a></td>
+								<td><p class="aligncenter">{{supporter.job}}</p></td>
+							</tr>
+						{% endif %}
 					{% endfor %}
-				</table>
+				</table></div>
+				<div class="space"></div>
+				<div class="well"><h4>South Bay/Campbell</h4>
+				<table border="1">
+					{% for supporter in sups %}
+						{% if supporter.dojo == 'sb' %}
+							<tr>
+								<td class="aligncenter"><a href="{{supporter.link}}"><img class="supporter" alt="{{supporter.alt}}" id="{{supporter.hashtag}}" src="{{supporter.img}}"/></a></td>
+								<td><p class="aligncenter">{{supporter.job}}</p></td>
+							</tr>
+						{% endif %}
+					{% endfor %}
+				</table></div>
+				<div class="space"></div>
+				<div class="well"><h4>San Francisco</h4>
+				<table border="1">
+					{% for supporter in sups %}
+						{% if supporter.dojo == 'sf' %}
+							<tr>
+								<td class="aligncenter"><a href="{{supporter.link}}"><img class="supporter" alt="{{supporter.alt}}" id="{{supporter.hashtag}}" src="{{supporter.img}}"/></a></td>
+								<td><p class="aligncenter">{{supporter.job}}</p></td>
+							</tr>
+						{% endif %}
+					{% endfor %}
+				</table></div>
+				<div class="space"></div>
+				<div class="well"><h4>Tri-Valley</h4>
+				<table border="1">
+					{% for supporter in sups %}
+						{% if supporter.dojo == 'tv' %}
+							<tr>
+								<td class="aligncenter"><a href="{{supporter.link}}"><img class="supporter" alt="{{supporter.alt}}" id="{{supporter.hashtag}}" src="{{supporter.img}}"/></a></td>
+								<td><p class="aligncenter">{{supporter.job}}</p></td>
+							</tr>
+						{% endif %}
+					{% endfor %}
+				</table></div>
 			</div>
 		</div>
 	</div>

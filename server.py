@@ -14,12 +14,13 @@ class TopBarLink(object):
 		self.title = title
 
 class Supporter(object):
-	def __init__(self, img, alt, link, job, hashtag):
+	def __init__(self, img, alt, link, job, hashtag, dojo):
 		self.img  = img
 		self.alt  = alt
 		self.link = link
 		self.job  = job
 		self.hashtag = hashtag
+		self.dojo = dojo
 		hashtaglist.append(hashtag)
 
 class Dojo(object):
@@ -199,15 +200,17 @@ dojolist[0].time = "<a target='_blank' href='" + dojolist[0].zenid + "'>" + dojo
 
 dojolist.append(Dojo("Tri-Valley", "Dublin Library", "7:00-8:30 pm", "First Wednesday of every month", "http://zen.coderdojo.com/dojo/428", "40", "October 2013", "trivalleycoderdojo", "disabled", "TrivCoderDojo", "trivalleycoderdojo@gmail.com"))
 
-supporters.append(Supporter("/static/Microsoft-Logo.png", "Microsoft", "http://microsoft.com", "Provides space for Mountain View CoderDojo", "micro"))
-supporters.append(Supporter("/static/boutmentors.png", "Breakout Mentors", "http://breakoutmentors.com", "Founder is lead technology champion of CoderDojo Mountain View", "bkm"))
+################################sponsors##################################
+supporters.append(Supporter("/static/Microsoft-Logo.png", "Microsoft", "http://microsoft.com", "Provides refreshments and venue", "micro", dojo="mv"))
+supporters.append(Supporter("/static/boutmentors.png", "Breakout Mentors", "http://breakoutmentors.com", "Founder is lead technology champion", "bkm", dojo="mv"))
 
-supporters.append(Supporter("/static/dublinLogo.png", "The City of Dublin", "http://dublinca.gov", "Provides space for Tri-Valley CoderDojo at the Dublin Library", "dublin"))
+supporters.append(Supporter("/static/dublinLogo.png", "The City of Dublin", "http://dublinca.gov", "Provides venue at the Dublin Library", "dublin", dojo="tv"))
 
-supporters.append(Supporter("/static/GitHub-Logo.png", "GitHub", "http://github.com", "Provides space for San Fransisco CoderDojo", "gh"))
-supporters.append(Supporter("/static/Symantec_logo.png", "Symantec", "http://symantec.com", "Provides refreshments for Mountain View CoderDojo", "syn"))
-supporters.append(Supporter("/static/OnSite_logo.png", "On-Site", "http://on-site.com/", "Provides space and refreshments for South Bay CoderDojo", "os"))
-supporters.append(Supporter("/static/mountainmikes.png", "Mountain Mike's Pizza", "http://mountainmikes.com", "Mountain View CoderDojo discount pizza offers", "mm"))
+supporters.append(Supporter("/static/GitHub-Logo.png", "GitHub", "http://github.com", "Provides venue", "gh", dojo="sf"))
+supporters.append(Supporter("/static/4D.gif", "4D", "http://4d.com", "Provides database management software", "fourd", dojo="mv"))
+supporters.append(Supporter("/static/Symantec_logo.png", "Symantec", "http://symantec.com", "Provides refreshments", "syn", dojo="mv"))
+supporters.append(Supporter("/static/OnSite_logo.png", "On-Site", "http://on-site.com/", "Provides refreshments and venue", "os", dojo="sb"))
+supporters.append(Supporter("/static/mountainmikes.png", "Mountain Mike's Pizza", "http://mountainmikes.com", "Provides discounted pizza", "mm", dojo="mv"))
 	
 topbar.append(TopBarLink("", "Home"))
 topbar.append(TopBarLink("dojos", "Dojos"))
