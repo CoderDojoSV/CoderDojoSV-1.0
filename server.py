@@ -67,6 +67,11 @@ def get_involved():
 @app.route("/sponsors/")
 def supporterspage():
 	return render_template("sup.html", sups=supporters, topbar=topbar)
+
+@app.route("/donate")
+@app.route("/donate/")
+def donatepage():
+	return render_template("donate.html", topbar=topbar)
 	
 @app.route("/faqs")
 @app.route("/faqs/")

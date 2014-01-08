@@ -1,0 +1,42 @@
+{% extends "site.new.master" %}
+{% block body %}		
+	<div class="containery">
+		<div class="row-fluid">
+			<div class="span12 side">
+				<h3>Donate</h3>
+				<p>Tax-deductible donations can be made to CoderDojo Silicon Valley (CDSV) through our fiscal sponsor.</p>
+				<a href="http://svefoundation.org"><img src="{{url_for('static', filename='SVEF.jpg')}}" style="height:100px;width:auto;"/></a>
+				<div class="space"></div>
+				<div class="welley">				
+					<h3>How to donate</h3>
+					<div class="row-fluid nobg" style="border-top:1px solid gray; border-bottom:1px solid gray;">
+						<div class="span6" style="border-right: 1px solid gray;">
+							<div style="padding-right: 10px; padding-top: 2px;">							
+								<h4>By check</h4>
+								<p>Make check payable to: <pre>Silicon Valley Education Foundation</pre></p>
+								<p>In the memo line of your check, be sure to include the following: <pre>FBO/CoderDojo Silicon Valley</pre></p>
+								<p>Mail checks to:</p>
+								<pre>Marcy Delgado
+PO BOX 20927
+San Jose CA 95160</pre>
+							
+							</div>
+						</div>
+						<div class="span6">
+							<div style="padding-top: 2px;">	
+								<h4>Online<span style="color:red;">*</span></h4>
+								<p>Use the SVEF <a href="http://svefoundation.org/svefoundation/donate/">online donation form.</a> Select this option:</p>
+								<pre>I prefer to donate a different amount</pre>
+								<p>In the Comments/Cause section of the form, be sure to include the following: <pre>FBO/CoderDojo Silicon Valley</pre></p>
+								<p>If your employer matches contributions, enter their name in the section on the form: <pre>Employer's Name</pre></p>
+							</div>
+						</div>
+					</div>
+					<div class="space"></div>
+					<p>90% of all donations go directly to CDSV programs. SVEF retains 10% as compensation for donation processing and tax reporting services.</p>
+					<p><span style="color:red;">*</span>If you donate online, an additional 5% is applied towards PayPal/credit card fees.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock body %}

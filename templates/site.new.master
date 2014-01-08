@@ -236,6 +236,7 @@
 							<li><a href="/get_involved">Get Involved</a></li>
 							<li><a href="/sponsors">Sponsors</a></li>
 							<li><a href="/calendar">Calendar</a></li>
+							<li><a href="/donate">Donate</a></li>
 						</ul>
 					</div><!-- /.nav-collapse -->
 				</div>
@@ -265,9 +266,9 @@
 			<div id="footer">
 				<div id="footer-inner">
 					<nav>
-						<i>2013 CoderDojo Silicon Valley</i> |
+						<i>2014 CoderDojo Silicon Valley</i> |
 						<a href="mailto:siliconvalley@coderdojo.com">Contact</a> |
-						<a href="javascript:window.comingSoon()">Credits</a>
+						<a href="/about">About</a>
 					</nav>
 				</div>
 			</div>
