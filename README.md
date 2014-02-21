@@ -1,2 +1,2 @@
-#CoderDojo Silicon Valley Website
-This website is located at coderdojosv.com.
+#CDSV Website 1.0
+This is the original website, written in `Flask`.
